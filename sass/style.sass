@@ -1,0 +1,177 @@
+@import fonts
+
+
+html, body
+    padding: 0
+    margin: 0
+
+ul
+    padding: 0
+    margin: 0
+    list-style: none
+
+a
+    text-decoration: none
+
+.wrapper
+    width: 1170px
+    padding-left: 15px
+    padding-right: 15px
+    margin: 0 auto
+
+
+.section-main
+    width: 100%
+    height: 100vh
+    
+header
+    width: 100%
+    height: 100px
+    background: rgba(0,0,0, 0.7)
+    position: absolute
+    z-index: 9
+
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: inherit
+    height: 100px
+    &-logo
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &_img
+            width: 70px
+            height: 70px
+        &_slogan
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+            & span:first-child
+                color: #6de315
+                font-family: 'Open Sans Bold', 'Arial', sans-serif
+                font-size: 30px
+            & span:last-child
+                color: #e4eaee
+                font-family: 'p22_corinthia', 'Arial', sans-serif
+                font-size: 24px
+                letter-spacing: 2px
+                margin-top: -12px
+    &-nav
+        width: 600px
+        & ul
+            width: 100%
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin: 0
+            & li a
+                opacity: 0.69
+                color: #ffffff
+                font-family: "Open Sans Semibold"
+                font-size: 18px
+                font-weight: 400
+                text-decoration: none
+
+.slider
+    max-width: 100%
+    height: 100%
+    position: relative
+    & .items
+        animation: fade 1.5s
+        position: relative
+        & .slider-title
+            position: absolute
+            width: 500px
+            top: 30%
+            left: 10%
+            &_logo
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                &-img
+                    width: 120px
+                    height: 120px
+                &-slogan
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    flex-direction: column
+                    & span:first-child
+                        color: #6de315
+                        font-family: 'Open Sans Bold', 'Arial', sans-serif
+                        font-size: 39px
+                    & span:last-child
+                        color: #ffffff
+                        font-family: 'p22_corinthia', 'Arial', sans-serif
+                        font-size: 24px
+                        letter-spacing: 2px
+                        margin-top: -14px
+            &_items
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                align-items: flex-start
+                padding-left: 5px
+                margin: 30px 0
+                
+                & span, p
+                    opacity: 0.8
+                    color: #ffffff
+                    font-family: 'Raleway Regular'
+                    font-size: 16px
+                    font-weight: 300
+                    line-height: 23px
+                & h1
+                    color: #ffffff
+                    font-family: 'Raleway Bold'
+                    font-size: 36px
+                    font-weight: 400
+                    text-transform: uppercase
+                    letter-spacing: 2px
+            &_button
+                padding: 10px 30px
+                color: #ffffff
+                font-family: "Open Sans Semibold"
+                font-size: 18px
+                font-weight: 400
+                border: 2px solid #ffffff
+                text-decoration: none
+                margin-left: 5px
+
+    & .items img
+        object-fit: cover
+        width: 100%
+        height: 100vh
+        border: none !important
+        box-shadow: none !important
+    & .arrows
+        position: absolute
+        bottom: 10%
+        right: 10%
+    & .prev, .next
+        cursor: pointer
+        padding: 16px
+        color: #fff
+        font-weight: bold
+        font-size: 18px
+        transition: 0.6s ease
+        border-radius: 3px
+        text-decoration: none
+        background:  rgba(0, 0, 0, 0.3)
+    
+    
+    @keyframes fade
+        from
+            opacity: 0.4
+        to
+            opacity: 1
+        
+    
+        
+
+    
+
