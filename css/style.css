@@ -81,10 +81,6 @@ ul {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
-}
-
 .wrapper {
   width: 1170px;
   padding-left: 15px;
@@ -99,10 +95,90 @@ a {
 
 header {
   width: 100%;
-  height: 100px;
+  height: 120px;
   background: rgba(0, 0, 0, 0.7);
   position: absolute;
   z-index: 9;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.contacts-phone, .contacts-email, .contacts-social, .contacts-lang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contacts-phone_title, .contacts-email_title, .contacts-social_title, .contacts-lang_title {
+  color: #ffffff;
+  font-family: 'Open Sans Regular';
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-right: 10px;
+}
+
+.contacts-phone_tel, .contacts-phone_mail, .contacts-email_tel, .contacts-email_mail, .contacts-social_tel, .contacts-social_mail, .contacts-lang_tel, .contacts-lang_mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contacts-phone_tel a, .contacts-phone_mail a, .contacts-email_tel a, .contacts-email_mail a, .contacts-social_tel a, .contacts-social_mail a, .contacts-lang_tel a, .contacts-lang_mail a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.contacts-phone_tel a:hover, .contacts-phone_mail a:hover, .contacts-email_tel a:hover, .contacts-email_mail a:hover, .contacts-social_tel a:hover, .contacts-social_mail a:hover, .contacts-lang_tel a:hover, .contacts-lang_mail a:hover {
+  text-decoration: none;
+  color: #eaeaea;
+}
+
+.contacts-phone_icon, .contacts-email_icon, .contacts-social_icon, .contacts-lang_icon {
+  padding: 2px 5px;
+  font-size: 16px;
+  background: #eaeaea;
+  margin-right: 10px;
+  border-radius: 3px;
+  color: #000;
+}
+
+.contacts-phone_icon:hover, .contacts-email_icon:hover, .contacts-social_icon:hover, .contacts-lang_icon:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.contacts-phone_flags, .contacts-email_flags, .contacts-social_flags, .contacts-lang_flags {
+  margin-left: 20px;
+}
+
+.contacts-phone_flags img, .contacts-email_flags img, .contacts-social_flags img, .contacts-lang_flags img {
+  width: 30px;
 }
 
 .header {
@@ -115,8 +191,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: inherit;
-  height: 100px;
+  width: 100%;
+  height: 70px;
 }
 
 .header-logo {
@@ -308,6 +384,7 @@ header {
   border: 2px solid #ffffff;
   text-decoration: none;
   margin-left: 5px;
+  border-radius: 5px;
 }
 
 .slider .items img {
@@ -339,6 +416,11 @@ header {
   background: rgba(0, 0, 0, 0.3);
 }
 
+.slider .prev:hover, .slider .next:hover {
+  background: #eaeaea;
+  color: #000;
+}
+
 @-webkit-keyframes fade {
   from {
     opacity: 0.4;
@@ -355,5 +437,63 @@ header {
   to {
     opacity: 1;
   }
+}
+
+.section-about {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: #f5f5f5;
+}
+
+.section-about h3 {
+  font-family: "Open Sans Regular";
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-title {
+  width: 60%;
+}
+
+.about-title p {
+  color: #86878b;
+  font-family: "Open Sans Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.about-title p:nth-child(3) {
+  margin-bottom: 40px;
+}
+
+.about-title .contact-us {
+  color: #ffffff;
+  font-family: "Open Sans Semibold";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 10px 30px;
+  background: #ff8b38;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.about-img img {
+  width: 400px;
 }
 /*# sourceMappingURL=style.css.map */
