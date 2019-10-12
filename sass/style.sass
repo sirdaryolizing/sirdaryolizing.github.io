@@ -10,6 +10,10 @@ ul
     margin: 0
     list-style: none
 
+a
+    text-decoration: none
+    outline: none
+
 .wrapper
     width: 1170px
     padding-left: 15px
@@ -125,6 +129,8 @@ header
     & .items
         animation: fade 1.5s
         position: relative
+        width: 100%
+        height: 100vh
         & .slider-title
             position: absolute
             width: 500px
@@ -184,30 +190,35 @@ header
                 text-decoration: none
                 margin-left: 5px
                 border-radius: 5px
-
-    & .items img
-        object-fit: cover
-        width: 100%
-        height: 100vh
-        border: none !important
-        box-shadow: none !important
-    & .arrows
-        position: absolute
-        bottom: 10%
-        right: 10%
-    & .prev, .next
-        cursor: pointer
-        padding: 16px
-        color: #fff
-        font-weight: bold
-        font-size: 18px
-        transition: 0.6s ease
-        border-radius: 3px
-        text-decoration: none
-        background:  rgba(0, 0, 0, 0.3)
-    & .prev:hover, .next:hover
-        background: #eaeaea
-        color: #000
+    & .truck-bg
+        background: url(../img/bg_truck.jpg) bottom center no-repeat
+        background-size: cover
+    & .car-bg
+        background: url(../img/rentacar.jpg) bottom center no-repeat
+        background-size: cover
+    & .office-bg
+        background: url(../img/office-bg.jpg) bottom center no-repeat
+        background-size: cover
+    & .heavy-bg
+        background: url(../img/heavy-trucks.jpg) bottom center no-repeat
+        background-size: cover
+    // & .arrows
+    //     position: absolute
+    //     bottom: 10%
+    //     right: 10%
+    // & .prev, .next
+    //     cursor: pointer
+    //     padding: 16px
+    //     color: #fff
+    //     font-weight: bold
+    //     font-size: 18px
+    //     transition: 0.6s ease
+    //     border-radius: 3px
+    //     text-decoration: none
+    //     background:  rgba(0, 0, 0, 0.3)
+    // & .prev:hover, .next:hover
+    //     background: #eaeaea
+    //     color: #000
     
     
     @keyframes fade
@@ -398,3 +409,39 @@ header
                     text-decoration: none
                     color: #fff
                 
+// end section-service
+
+// section-calculator
+
+// end section-calculator
+
+// section-partners
+.section-partners
+    width: 100%
+    padding-top: 100px
+    padding-bottom: 100px
+    & h3
+        color: #212121
+        font-family: 'Raleway Regular'
+        font-size: 36px
+        font-weight: 400
+        line-height: 43px
+        text-transform: uppercase
+        margin-bottom: 20px
+        text-align: center
+    & hr
+        border: none
+        width: 100px
+        height: 2px
+        background: #ff8b38
+        margin-bottom: 40px
+    & .partners 
+        display: flex
+        justify-content: space-between
+        align-items: center
+        & .partners-logo
+            display: flex
+            justify-content: center
+            align-items: center
+            & a img
+                max-width: 180px

@@ -81,6 +81,11 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  outline: none;
+}
+
 .wrapper {
   width: 1170px;
   padding-left: 15px;
@@ -279,6 +284,8 @@ header {
   -webkit-animation: fade 1.5s;
           animation: fade 1.5s;
   position: relative;
+  width: 100%;
+  height: 100vh;
 }
 
 .slider .items .slider-title {
@@ -387,38 +394,24 @@ header {
   border-radius: 5px;
 }
 
-.slider .items img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 100vh;
-  border: none !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+.slider .truck-bg {
+  background: url(../img/bg_truck.jpg) bottom center no-repeat;
+  background-size: cover;
 }
 
-.slider .arrows {
-  position: absolute;
-  bottom: 10%;
-  right: 10%;
+.slider .car-bg {
+  background: url(../img/rentacar.jpg) bottom center no-repeat;
+  background-size: cover;
 }
 
-.slider .prev, .slider .next {
-  cursor: pointer;
-  padding: 16px;
-  color: #fff;
-  font-weight: bold;
-  font-size: 18px;
-  -webkit-transition: 0.6s ease;
-  transition: 0.6s ease;
-  border-radius: 3px;
-  text-decoration: none;
-  background: rgba(0, 0, 0, 0.3);
+.slider .office-bg {
+  background: url(../img/office-bg.jpg) bottom center no-repeat;
+  background-size: cover;
 }
 
-.slider .prev:hover, .slider .next:hover {
-  background: #eaeaea;
-  color: #000;
+.slider .heavy-bg {
+  background: url(../img/heavy-trucks.jpg) bottom center no-repeat;
+  background-size: cover;
 }
 
 @-webkit-keyframes fade {
@@ -705,5 +698,58 @@ header {
 .service-items_description a:hover {
   text-decoration: none;
   color: #fff;
+}
+
+.section-partners {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.section-partners h3 {
+  color: #212121;
+  font-family: 'Raleway Regular';
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 43px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.section-partners hr {
+  border: none;
+  width: 100px;
+  height: 2px;
+  background: #ff8b38;
+  margin-bottom: 40px;
+}
+
+.section-partners .partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-partners .partners .partners-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-partners .partners .partners-logo a img {
+  max-width: 180px;
 }
 /*# sourceMappingURL=style.css.map */
