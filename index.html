@@ -245,8 +245,57 @@
 
         <section class="section-calculator">
             <div class="wrapper">
+                <h3>Лизинговый калькулятор</h3>
+                <hr>
                 <div class="calculator">
-                    
+                    <div class="calculator-block">
+                        <h4>Введите данные для рассчета</h4>
+                        <form action="">
+                            <input class="total-sum" type="number" placeholder="Общая стоимость лизингового объекта">
+                            <input class="lease-time" type="number" placeholder="Срок лизинга (в месяцах)" list="lease-date">
+                            <datalist id="lease-date">
+                                <option value="12">
+                                <option value="24">
+                                <option value="36">
+                            </datalist>
+                            <input class="percent" type="number" placeholder="Процентная ставка (% в год)" list="percentage">
+                            <datalist id="percentage">
+                                <option value="26">
+                                <option value="27">
+                                <option value="28">
+                                <option value="29">
+                                <option value="30">
+                            </datalist>
+                            <input class="prepaid" type="number" placeholder="Размер авансового платежа (в процентах %)" list="prepaid-sum">
+                            <datalist id="prepaid-sum">
+                                <option value="30">
+                                <option value="35">
+                                <option value="40">
+                            </datalist>
+                        </form>
+                        <input class="count-btn" type="submit" value="Расчитать">
+                    </div>
+                    <div class="calculator-result">
+                        <h4>Данные рассчета</h4>
+                        <div class="calculator-result_items">
+                            <div class="calculator-result_items__data">
+                                <span>Общая сумма лизинга:</span>
+                                <input id="totalSumResult" type="text" readonly value="">
+                            </div>
+                            <div class="calculator-result_items__data">
+                                <span>Сумма основного долга:</span>
+                                <input id="totalSumResult" type="text" readonly value="">
+                            </div>
+                            <div class="calculator-result_items__data">
+                                <span>Сумма начисляемых процентов:</span>
+                                <input id="totalSumResult" type="text" readonly value="">
+                            </div>
+                            <div class="calculator-result_items__data">
+                                <span>Сумма ежемесячного платежа:</span>
+                                <input id="totalSumResult" type="text" readonly value="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
