@@ -31,7 +31,7 @@
                     <div class="contacts-social">
                         <a class="contacts-social_icon" href="#"><i class="fab fa-facebook"></i></a>
                         <a class="contacts-social_icon" href="#"><i class="fab fa-instagram"></i></a>
-                        <a class="contacts-social_icon" href="#"><i class="fab fa-telegram-plane"></i></a>
+                        <a class="contacts-social_icon" href="https://teleg.one/Sirdaryolizing_bot"><i class="fab fa-telegram-plane"></i></a>
                     </div>
                     <div class="contacts-lang">
                         <a class="contacts-lang_flags" href="#"><img src="img/ru-flag.png" alt="RU" title="Русский язык"></a>
@@ -77,6 +77,10 @@
                         </div>
                         <a class="slider-title_button" href="#">Онлайн заявка</a>
                     </div>
+                    <!-- <div class="arrows">
+                        <a class="prev" >&#10094;</a>
+                        <a class="next">&#10095;</a>
+                    </div> -->
                 </div>
                 <div class="items car-bg">
                     <div class="slider-title">
@@ -248,31 +252,29 @@
                 <h3>Лизинговый калькулятор</h3>
                 <hr>
                 <div class="calculator">
-                    <div class="calculator-block">
+                    <div class="calculator-result">
                         <h4>Введите данные для рассчета</h4>
-                        <form action="">
-                            <input class="total-sum" type="number" placeholder="Общая стоимость лизингового объекта">
-                            <input class="lease-time" type="number" placeholder="Срок лизинга (в месяцах)" list="lease-date">
-                            <datalist id="lease-date">
-                                <option value="12">
-                                <option value="24">
-                                <option value="36">
-                            </datalist>
-                            <input class="percent" type="number" placeholder="Процентная ставка (% в год)" list="percentage">
-                            <datalist id="percentage">
-                                <option value="26">
-                                <option value="27">
-                                <option value="28">
-                                <option value="29">
-                                <option value="30">
-                            </datalist>
-                            <input class="prepaid" type="number" placeholder="Размер авансового платежа (в процентах %)" list="prepaid-sum">
-                            <datalist id="prepaid-sum">
-                                <option value="30">
-                                <option value="35">
-                                <option value="40">
-                            </datalist>
-                        </form>
+                        <div class="calculator-result_items">
+                            <div class="calculator-result_items__data">
+                                <span>Стоимость лизингового объекта:</span>
+                                <input id="totalSum" type="number" value="" required>
+                            </div>
+                            <div class="calculator-result_items__data">
+                                <span>Срок лизинга (в месяцах):</span>
+                                <span id="month">12мес.</span>
+                                <input id="totalMonth" type="range" min="12" max="36" step="12" value="12">
+                            </div>
+                            <div class="calculator-result_items__data">
+                                <span>Процентная ставка (% в год):</span>
+                                <span id="percent">26%</span>
+                                <input id="totalPercent" type="range" min="26" max="50" step="1" value="26">
+                            </div>
+                            <div class="calculator-result_items__data">
+                                <span>Размер авансового платежа (в %):</span>
+                                <span id="prepaid">0%</span>
+                                <input id="totalPrepaid" type="range" min="0" max="50" value="0">
+                            </div>
+                        </div>
                         <input class="count-btn" type="submit" value="Расчитать">
                     </div>
                     <div class="calculator-result">
@@ -284,15 +286,15 @@
                             </div>
                             <div class="calculator-result_items__data">
                                 <span>Сумма основного долга:</span>
-                                <input id="totalSumResult" type="text" readonly value="">
+                                <input id="totalSumMain" type="text" readonly value="">
                             </div>
                             <div class="calculator-result_items__data">
                                 <span>Сумма начисляемых процентов:</span>
-                                <input id="totalSumResult" type="text" readonly value="">
+                                <input id="totalSumPercent" type="text" readonly value="">
                             </div>
                             <div class="calculator-result_items__data">
                                 <span>Сумма ежемесячного платежа:</span>
-                                <input id="totalSumResult" type="text" readonly value="">
+                                <input id="totalSumPerMonth" type="text" readonly value="">
                             </div>
                         </div>
                     </div>
@@ -326,5 +328,11 @@
     <script src="src/jquery.js"></script>
     <script src="src/slick.js"></script>
     <script src="src/script.js"></script>
+    <script>
+            (function(w,d,u){
+                    var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
+                    var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+            })(window,document,'https://cdn.bitrix24.ru/b11947354/crm/site_button/loader_1_ullmad.js');
+    </script>
 </body>
 </html>

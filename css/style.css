@@ -659,6 +659,8 @@ header {
 .service-items_img {
   -webkit-box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.3);
           box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  max-height: 300px;
 }
 
 .service-items_description {
@@ -739,105 +741,6 @@ header {
           align-items: flex-start;
 }
 
-.section-calculator .calculator-block {
-  width: 45%;
-}
-
-.section-calculator .calculator-block h4 {
-  color: #212121;
-  font-family: 'Raleway Bold';
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 43px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.section-calculator .calculator-block form {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin-left: 50px;
-}
-
-.section-calculator .calculator-block form input {
-  border: none;
-  outline: none;
-  border-bottom: 1px solid #ff8b38;
-  background: transparent;
-  padding: 3px 15px;
-  margin-bottom: 25px;
-  width: 80%;
-  line-height: 20px;
-  font-family: 'Open Sans Semibold';
-  font-size: 16px;
-  color: #212121;
-}
-
-.section-calculator .calculator-block form input::-webkit-outer-spin-button, .section-calculator .calculator-block form input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-
-.section-calculator .calculator-block form input::-webkit-calendar-picker-indicator {
-  display: none;
-}
-
-.section-calculator .calculator-block form input::-webkit-input-placeholder {
-  color: #212121;
-  font-family: 'Raleway Regular';
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.section-calculator .calculator-block form input:-ms-input-placeholder {
-  color: #212121;
-  font-family: 'Raleway Regular';
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.section-calculator .calculator-block form input::-ms-input-placeholder {
-  color: #212121;
-  font-family: 'Raleway Regular';
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.section-calculator .calculator-block form input::placeholder {
-  color: #212121;
-  font-family: 'Raleway Regular';
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.section-calculator .calculator-block .count-btn {
-  width: 200px;
-  color: #ffffff;
-  font-family: "Open Sans Semibold";
-  font-size: 15px;
-  line-height: 20px;
-  padding: 10px 30px;
-  background: #ff8b38;
-  border-radius: 5px;
-  border: none;
-  float: right;
-  margin-right: 30px;
-  outline: none;
-  cursor: pointer;
-}
-
 .section-calculator .calculator-result {
   width: 45%;
 }
@@ -855,6 +758,7 @@ header {
 
 .section-calculator .calculator-result_items {
   width: 100%;
+  height: 208px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -891,16 +795,53 @@ header {
 }
 
 .section-calculator .calculator-result_items__data input {
+  width: 25%;
   border: none;
   outline: none;
   border-bottom: 1px solid #ff8b38;
   background: transparent;
   padding: 3px 15px;
-  margin-bottom: 25px;
+  margin-bottom: 29px;
   line-height: 20px;
   font-family: 'Open Sans Semibold';
   font-size: 16px;
   color: #212121;
+  text-align: right;
+}
+
+.section-calculator .calculator-result_items__data input::-webkit-outer-spin-button, .section-calculator .calculator-result_items__data input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.section-calculator .calculator-result_items__data #totalMonth, .section-calculator .calculator-result_items__data #totalPercent, .section-calculator .calculator-result_items__data #totalPrepaid {
+  -webkit-appearance: none;
+  height: 1px;
+  background: #ff8b38;
+  border-radius: 3px;
+}
+
+.section-calculator .calculator-result_items__data #totalMonth::-webkit-slider-thumb, .section-calculator .calculator-result_items__data #totalPercent::-webkit-slider-thumb, .section-calculator .calculator-result_items__data #totalPrepaid::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ff8b38;
+  -webkit-box-shadow: 0 0 4px 3px #fff;
+          box-shadow: 0 0 4px 3px #fff;
+}
+
+.section-calculator .calculator-result .count-btn {
+  width: 200px;
+  color: #ffffff;
+  font-family: "Open Sans Semibold";
+  font-size: 15px;
+  line-height: 20px;
+  padding: 10px 30px;
+  background: #ff8b38;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .section-partners {
