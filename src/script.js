@@ -7,6 +7,8 @@ $(document).ready(function(){
         dots: false,
         arrows: false,
         fade: true,
+        pauseOnHover: false,
+        pauseOnFocus: false,
     });
     $('.partners').slick({
         autoplay: true,
@@ -15,6 +17,8 @@ $(document).ready(function(){
         centerMode: true,
         centerPadding: '0',
         slidesToShow: 5,
+        pauseOnHover: false,
+        pauseOnFocus: false,
         responsive: [
         {
             breakpoint: 768,
@@ -76,62 +80,51 @@ $(document).ready(function(){
                 if(totalMonth / 12 == 1){
                     sumOutPrepaid = totalSum - ((parseInt(totalSum) / 100) * parseInt(totalPrepaid));
                     sumTotal = parseInt(sumOutPrepaid) + ((parseInt(sumOutPrepaid) / 100) * parseInt(totalPercent));
-    
-                    $('#totalSumResult').val(sumTotal + ' сум.');
-                    $('#totalSumMain').val(sumOutPrepaid+ ' сум.');
-                    $('#totalSumPercent').val((sumTotal - sumOutPrepaid) + ' сум.');
-                    $('#totalSumPerMonth').val(parseFloat(sumTotal / totalMonth).toFixed(0) + ' сум.');
-    
+
+                    dataUpdatePrepaid(sumTotal, sumOutPrepaid);
                 }
                 else if(totalMonth / 12 == 2){
                     sumOutPrepaid = totalSum - ((parseInt(totalSum) / 100) * parseInt(totalPrepaid));
                     sumTotal = parseInt(sumOutPrepaid) + ((parseInt(sumOutPrepaid) / 100) * (parseInt(totalPercent)*2));
     
-                    $('#totalSumResult').val(sumTotal + ' сум.');
-                    $('#totalSumMain').val(sumOutPrepaid+ ' сум.');
-                    $('#totalSumPercent').val((sumTotal - sumOutPrepaid) + ' сум.');
-                    $('#totalSumPerMonth').val(parseFloat(sumTotal / totalMonth).toFixed(0) + ' сум.');
-    
+                    dataUpdatePrepaid(sumTotal, sumOutPrepaid);
                 }
                 else if(totalMonth / 12 == 3){
                     sumOutPrepaid = totalSum - ((parseInt(totalSum) / 100) * parseInt(totalPrepaid));
                     sumTotal = parseInt(sumOutPrepaid) + ((parseInt(sumOutPrepaid) / 100) * (parseInt(totalPercent)*3));
-    
-                    $('#totalSumResult').val(sumTotal + ' сум.');
-                    $('#totalSumMain').val(sumOutPrepaid+ ' сум.');
-                    $('#totalSumPercent').val((sumTotal - sumOutPrepaid) + ' сум.');
-                    $('#totalSumPerMonth').val(parseFloat(sumTotal / totalMonth).toFixed(0) + ' сум.');
-    
+
+                    dataUpdatePrepaid(sumTotal, sumOutPrepaid);
                 }
             }else{
                 if(totalMonth / 12 == 1){
                     sumTotal = parseInt(totalSum) + ((parseInt(totalSum) / 100) * parseInt(totalPercent));
-    
-                    $('#totalSumResult').val(sumTotal + ' сум.');
-                    $('#totalSumMain').val(totalSum + ' сум.');
-                    $('#totalSumPercent').val((sumTotal - totalSum) + ' сум.');
-                    $('#totalSumPerMonth').val(parseFloat(sumTotal / totalMonth).toFixed(0) + ' сум.');   
-    
+                    
+                    dataUpdateOutPrepaid(sumTotal);
                 }
                 else if(totalMonth / 12 == 2){
                     sumTotal = parseInt(totalSum) + ((parseInt(totalSum) / 100) * (parseInt(totalPercent)*2));
     
-                    $('#totalSumResult').val(sumTotal + ' сум.');
-                    $('#totalSumMain').val(totalSum + ' сум.');
-                    $('#totalSumPercent').val((sumTotal - totalSum) + ' сум.');
-                    $('#totalSumPerMonth').val(parseFloat(sumTotal / totalMonth).toFixed(0) + ' сум.');   
-    
+                    dataUpdateOutPrepaid(sumTotal);
                 }
                 else if(totalMonth / 12 == 3){
                     sumTotal = parseInt(totalSum) + ((parseInt(totalSum) / 100) * (parseInt(totalPercent)*3));
     
-                    $('#totalSumResult').val(sumTotal + ' сум.');
-                    $('#totalSumMain').val(totalSum + ' сум.');
-                    $('#totalSumPercent').val((sumTotal - totalSum) + ' сум.');
-                    $('#totalSumPerMonth').val(parseFloat(sumTotal / totalMonth).toFixed(0) + ' сум.');   
-    
+                    dataUpdateOutPrepaid(sumTotal);
                 }
             }
+        }
+
+        function dataUpdatePrepaid(sumTotal, sumOutPrepaid){
+            $('#totalSumResult').val(sumTotal + ' сум.');
+            $('#totalSumMain').val(sumOutPrepaid+ ' сум.');
+            $('#totalSumPercent').val((sumTotal - sumOutPrepaid) + ' сум.');
+            $('#totalSumPerMonth').val(parseFloat(sumTotal / totalMonth).toFixed(0) + ' сум.');
+        }
+        function dataUpdateOutPrepaid(sumTotal){
+            $('#totalSumResult').val(sumTotal + ' сум.');
+            $('#totalSumMain').val(totalSum + ' сум.');
+            $('#totalSumPercent').val((sumTotal - totalSum) + ' сум.');
+            $('#totalSumPerMonth').val(parseFloat(sumTotal / totalMonth).toFixed(0) + ' сум.'); 
         }
     });
 });
