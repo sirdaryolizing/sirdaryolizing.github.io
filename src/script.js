@@ -74,41 +74,28 @@ $(document).ready(function(){
 
         if(!totalSum){
             alert('Заполните поле "Стоимость лизингового объекта"!');
-        }
-        else{
+        }else{
             if(totalPrepaid != 0){
+                sumOutPrepaid = totalSum - ((parseInt(totalSum) / 100) * parseInt(totalPrepaid));
                 if(totalMonth / 12 == 1){
-                    sumOutPrepaid = totalSum - ((parseInt(totalSum) / 100) * parseInt(totalPrepaid));
                     sumTotal = parseInt(sumOutPrepaid) + ((parseInt(sumOutPrepaid) / 100) * parseInt(totalPercent));
-
                     dataUpdatePrepaid(sumTotal, sumOutPrepaid);
-                }
-                else if(totalMonth / 12 == 2){
-                    sumOutPrepaid = totalSum - ((parseInt(totalSum) / 100) * parseInt(totalPrepaid));
+                }else if(totalMonth / 12 == 2){
                     sumTotal = parseInt(sumOutPrepaid) + ((parseInt(sumOutPrepaid) / 100) * (parseInt(totalPercent)*2));
-    
                     dataUpdatePrepaid(sumTotal, sumOutPrepaid);
-                }
-                else if(totalMonth / 12 == 3){
-                    sumOutPrepaid = totalSum - ((parseInt(totalSum) / 100) * parseInt(totalPrepaid));
+                }else if(totalMonth / 12 == 3){
                     sumTotal = parseInt(sumOutPrepaid) + ((parseInt(sumOutPrepaid) / 100) * (parseInt(totalPercent)*3));
-
                     dataUpdatePrepaid(sumTotal, sumOutPrepaid);
                 }
             }else{
                 if(totalMonth / 12 == 1){
                     sumTotal = parseInt(totalSum) + ((parseInt(totalSum) / 100) * parseInt(totalPercent));
-                    
                     dataUpdateOutPrepaid(sumTotal);
-                }
-                else if(totalMonth / 12 == 2){
+                }else if(totalMonth / 12 == 2){
                     sumTotal = parseInt(totalSum) + ((parseInt(totalSum) / 100) * (parseInt(totalPercent)*2));
-    
                     dataUpdateOutPrepaid(sumTotal);
-                }
-                else if(totalMonth / 12 == 3){
+                }else if(totalMonth / 12 == 3){
                     sumTotal = parseInt(totalSum) + ((parseInt(totalSum) / 100) * (parseInt(totalPercent)*3));
-    
                     dataUpdateOutPrepaid(sumTotal);
                 }
             }
