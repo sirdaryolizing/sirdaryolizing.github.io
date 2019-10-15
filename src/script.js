@@ -138,13 +138,61 @@ $(document).ready(function(){
     });
 });
 
-$(document).ready(function () {
+$(document).ready(function(){
 	$('a[data-target^="anchor"]').bind('click.smoothscroll', function () {
 		var target = $(this).attr('href'),
-			bl_top = $(target).offset().top - 70;
+			bl_top = $(target).offset().top - 0;
 		$('body, html').animate({ scrollTop: bl_top }, 1500);
 		return false;
 	});
+});
+
+$(document).ready(function(){
+    $('.slider-title_button').click(function () {
+        $('.modal').css('display', 'flex');
+        $('.modal').fadeIn();
+        $('main').css('filter', 'blur(5px)');
+        $('body').css('overflow', 'hidden');
+        $('.modal-app').css('display', 'flex');
+    });
+    $('.contact-us').click(function(){
+        $('.modal').css('display', 'flex');
+        $('.modal').fadeIn();
+        $('main').css('filter', 'blur(5px)');
+        $('body').css('overflow', 'hidden');
+        $('.modal-callback').css('display', 'block');
+    });
+    
+    $('.modal-app_close, .modal-callback_close').click(function () {
+        $('.modal').css('display', '');
+        $('.modal').fadeOut();
+        $('main').css('filter', 'none');
+        $('body').css('overflow', '');
+        $('.modal-app').css('display', 'none');
+        $('.modal-callback').css('display', 'none');
+    });
+    
+    $(document).mouseup(function (e) {
+        var popup = $('.modal-app_form');
+        if (e.target != popup[0] && popup.has(e.target).length === 0) {
+            $('.modal').fadeOut();
+            $('main').css('filter', 'none');
+            $('body').css('overflow', '');
+        }
+    });
+
+    $('#lease-item-date').on('input', function(){
+        var modalMonth = $('#lease-item-date').val(),
+            month = $('#lease-item-month');
+
+        month.text(modalMonth + 'мес.');
+    });
+    $('#lease-item-prepaid').on('input', function(){
+        var modalPercent = $('#lease-item-prepaid').val(),
+            percent = $('#lease-item-percent');
+
+        percent.text(modalPercent + '%');
+    });
 });
 
 

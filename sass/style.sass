@@ -31,7 +31,7 @@ header
     background: rgba(0,0,0, 0.7)
     position: fixed
     z-index: 9
-    transition: 0.4s
+    transition: 0.3s
 
 .contacts
     display: flex
@@ -39,7 +39,6 @@ header
     align-items: flex-start
     padding-top: 10px
     border-bottom: 1px solid rgba(255,255,255, 0.3)
-    transition: ease 1s
     &-phone,
     &-email,
     &-social,
@@ -275,6 +274,7 @@ header
             background: #ff8b38
             border-radius: 5px
             text-decoration: none
+            cursor: pointer
     &-img img
         width: 400px
             
@@ -473,7 +473,7 @@ header
                         width: 25%
                         border: none
                         outline: none
-                        border-bottom: 1px solid #ff8b38
+                        border-bottom: 2px solid #ff8b38
                         background: transparent
                         padding: 3px 15px
                         margin-bottom: 29px
@@ -639,3 +639,140 @@ footer
                 color: #ffffff
                 width: 265px
                 text-align: justify
+// end footer-section
+
+// modal
+
+.modal
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 9999
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1)
+    width: 100%
+    height: 100vh
+    display: none
+    justify-content: center
+    align-items: center
+    &-app
+        position: relative
+        display: none
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+        width: 800px
+        // box-shadow: 0 0 7px 5px #f8af7b
+        border-radius: 5px
+        background: #fff
+        & h3
+            color: #212121
+            font-family: 'Raleway Bold'
+            font-size: 26px
+            line-height: 36px
+            text-transform: uppercase
+            margin-bottom: 10px
+            text-align: center
+        & hr
+            border: none
+            width: 100px
+            height: 2px
+            background: #ff8b38
+            margin-bottom: 10px
+            margin-top: 10px
+        & .modal-app_close
+            position: absolute
+            top: 15px
+            right: 15px
+            color: #ff8b38
+            font-size: 30px
+            cursor: pointer
+            &:hover
+                transform: rotate(180deg)
+                transition: 1s
+        &_form
+            width: 600px
+            padding: 20px
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+            & button
+                width: 200px
+                color: #ffffff
+                font-family: "Open Sans Semibold"
+                font-size: 15px
+                line-height: 20px
+                padding: 10px 30px
+                background: #ff8b38
+                border-radius: 5px
+                border: none
+                outline: none
+                cursor: pointer
+                margin-top: 20px
+            & .modal-slider
+                align-items: center
+                margin-bottom: 15px
+            & h6
+                color: #212121
+                font-family: 'Raleway Regular'
+                font-size: 18px
+                font-weight: 600
+                line-height: 26px
+                text-transform: uppercase
+                margin-bottom: 10px
+                margin-top: 10px
+            &_data
+                width: 100%
+                display: flex
+                justify-content: space-between
+                align-items: flex-start
+                & label, span
+                    line-height: 20px
+                    font-family: 'Open Sans Semibold'
+                    font-size: 16px
+                    color: #212121
+                    & sup
+                        color: #ff0000
+                & input
+                    width: 40%
+                    border: none
+                    outline: none
+                    border-bottom: 2px solid #ff8b38
+                    background: transparent
+                    padding: 3px 15px
+                    line-height: 20px
+                    font-family: 'Open Sans Semibold'
+                    font-size: 16px
+                    color: #212121
+                    margin-bottom: 15px
+                    &::-webkit-outer-spin-button,
+                    &::-webkit-inner-spin-button
+                        -webkit-appearance: none
+                    &::placeholder
+                        font-weight: 300
+                        color: #c7c7c7
+                & #lease-item-date, #lease-item-prepaid
+                    -webkit-appearance: none
+                    height: 1px
+                    background: #ff8b38
+                    border-radius: 3px
+                    margin-bottom: 5px
+                    &::-webkit-slider-thumb
+                        -webkit-appearance: none
+                        width: 20px
+                        height: 20px
+                        border-radius: 50%
+                        background: #ff8b38
+                        box-shadow: 0 0 4px 3px #fff
+    &-callback
+        width: 500px
+        position: relative 
+        display: none
+        // box-shadow: 0 0 3px 1px #00aeef
+        &_close
+            position: absolute
+            top: 15px
+            right: 15px
+            font-size: 18px
+            cursor: pointer
+        
