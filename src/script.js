@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('.slider').slick({
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 2500,
         infinite: true,
         speed: 300,
         dots: false,
@@ -79,13 +79,17 @@ $(document).ready(function(){
                 sumOutPrepaid = totalSum - ((parseInt(totalSum) / 100) * parseInt(totalPrepaid));
                 if(totalMonth / 12 == 1){
                     sumTotal = parseInt(sumOutPrepaid) + ((parseInt(sumOutPrepaid) / 100) * parseInt(totalPercent));
-                    dataUpdatePrepaid(sumTotal, sumOutPrepaid);
+                    // percentByDate = ((parseInt(sumOutPrepaid) / 100) * parseInt(totalPercent) / 12) * totalMonth;
+                    
+                    dataUpdatePrepaid(sumTotal, sumOutPrepaid, totalMonth);
                 }else if(totalMonth / 12 == 2){
-                    sumTotal = parseInt(sumOutPrepaid) + ((parseInt(sumOutPrepaid) / 100) * (parseInt(totalPercent)*2));
-                    dataUpdatePrepaid(sumTotal, sumOutPrepaid);
+                    sumTotal = parseInt(sumOutPrepaid) + ((((parseInt(sumOutPrepaid) / 100) * (parseInt(totalPercent))) / 12) * totalMonth );
+                    
+                    dataUpdatePrepaid(sumTotal, sumOutPrepaid, totalMonth);
                 }else if(totalMonth / 12 == 3){
-                    sumTotal = parseInt(sumOutPrepaid) + ((parseInt(sumOutPrepaid) / 100) * (parseInt(totalPercent)*3));
-                    dataUpdatePrepaid(sumTotal, sumOutPrepaid);
+                    sumTotal = parseInt(sumOutPrepaid) + ((((parseInt(sumOutPrepaid) / 100) * (parseInt(totalPercent))) / 12) * totalMonth );
+                    
+                    dataUpdatePrepaid(sumTotal, sumOutPrepaid, totalMonth);
                 }
             }else{
                 if(totalMonth / 12 == 1){
@@ -101,7 +105,7 @@ $(document).ready(function(){
             }
         }
 
-        function dataUpdatePrepaid(sumTotal, sumOutPrepaid){
+        function dataUpdatePrepaid(sumTotal, sumOutPrepaid, totalMonth){
             $('#totalSumResult').val(sumTotal + ' сум.');
             $('#totalSumMain').val(sumOutPrepaid+ ' сум.');
             $('#totalSumPercent').val((sumTotal - sumOutPrepaid) + ' сум.');
@@ -114,6 +118,33 @@ $(document).ready(function(){
             $('#totalSumPerMonth').val(parseFloat(sumTotal / totalMonth).toFixed(0) + ' сум.'); 
         }
     });
+});
+
+$(document).ready(function(){
+    $(window).scroll(function(e){
+        var windowScroll = document.body.scrollTop || document.documentElement.scrollTop;
+
+        if(windowScroll != 0){
+            $('header').css({
+                height: '70px',
+                background: '#333333'});
+            $('.contacts').hide();
+        }else{
+            $('header').css({
+                height: '120px',
+                background: 'rgba(0,0,0, 0.7)'});
+            $('.contacts').show();
+        }
+    });
+});
+
+$(document).ready(function () {
+	$('a[data-target^="anchor"]').bind('click.smoothscroll', function () {
+		var target = $(this).attr('href'),
+			bl_top = $(target).offset().top - 70;
+		$('body, html').animate({ scrollTop: bl_top }, 1500);
+		return false;
+	});
 });
 
 

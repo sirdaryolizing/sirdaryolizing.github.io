@@ -12,7 +12,7 @@
 </head>
 <body>
     <main>
-        <section class="section-main">
+        <section class="section-main" id="main">
             <header>
                 <div class="wrapper contacts">
                     <div class="contacts-phone">
@@ -49,11 +49,11 @@
                         </div>
                         <nav class="header-nav">
                             <ul>
-                                <li><a href="#">Главная</a></li>
-                                <li><a href="#">О нас</a></li>
-                                <li><a href="#">Услуги</a></li>
-                                <li><a href="#">Лизинговый расчет</a></li>
-                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#main" data-target="anchor">Главная</a></li>
+                                <li><a href="#about" data-target="anchor">О нас</a></li>
+                                <li><a href="#service" data-target="anchor">Услуги</a></li>
+                                <li><a href="#calc" data-target="anchor">Лизинговый расчет</a></li>
+                                <li><a href="#footer" data-target="anchor">Контакты</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -141,7 +141,7 @@
             </div>
         </section>
 
-        <section class="section-about">
+        <section class="section-about" id="about">
             <div class="wrapper">
                 <h3>О нас</h3>
                 <hr>
@@ -191,7 +191,7 @@
             </div>
         </section>
 
-        <section class="section-service">
+        <section class="section-service" id="service">
             <div class="wrapper">
                 <h3>Наши услуги</h3>
                 <hr>
@@ -247,7 +247,7 @@
             </div>
         </section>
 
-        <section class="section-calculator">
+        <section class="section-calculator" id="calc">
             <div class="wrapper">
                 <h3>Лизинговый калькулятор</h3>
                 <hr>
@@ -262,17 +262,17 @@
                             <div class="calculator-result_items__data">
                                 <span>Срок лизинга (в месяцах):</span>
                                 <span id="month">12мес.</span>
-                                <input id="totalMonth" type="range" min="12" max="36" step="12" value="12">
+                                <input id="totalMonth" class="dataSlider" type="range" min="12" max="36" step="12" value="12">
                             </div>
                             <div class="calculator-result_items__data">
                                 <span>Процентная ставка (% в год):</span>
                                 <span id="percent">26%</span>
-                                <input id="totalPercent" type="range" min="26" max="50" step="1" value="26">
+                                <input id="totalPercent" class="dataSlider" type="range" min="26" max="50" step="1" value="26">
                             </div>
                             <div class="calculator-result_items__data">
                                 <span>Размер авансового платежа (в %):</span>
                                 <span id="prepaid">0%</span>
-                                <input id="totalPrepaid" type="range" min="0" max="50" value="0">
+                                <input id="totalPrepaid" class="dataSlider" type="range" min="0" max="50" value="0">
                             </div>
                         </div>
                         <input class="count-btn" type="submit" value="Расчитать">
@@ -317,13 +317,53 @@
                     <div class="partners-logo"><a><img src="img/partners/temiryol.svg" alt="TemirYulSugurta"></a></div>
                     <div class="partners-logo"><a><img src="img/partners/uzauto.jpg" alt="UzAutoMotors"></a></div>
                     <div class="partners-logo"><a><img src="img/partners/uzbekinvest.png" alt="UzbekInvest"></a></div>
-                    <div class="partners-logo"><a><img src="img/partners/uzpahtasanoat.png" alt="UzPaxtaSanoat"></a></div>
+                    <div class="partners-logo"><a><img src="img/partners/uzpahtasanoat.jpg" alt="UzPaxtaSanoat"></a></div>
                 </div>
             </div>
         </section>
-
-
     </main>
+    <footer id="footer">
+        <div class="wrapper footer-block">
+            <div class="footer">
+                <div class="footer-logo">
+                    <img class="footer-logo-img" src="img/logo.png" alt="logo" title="Leasing and rent Sirdarya">
+                    <div class="footer-logo-slogan">
+                        <span>Leasing and rent Sirdarya</span>
+                        <span>Kelajak bugundan boshlanadi</span>
+                    </div>
+                </div>
+                <div class="footer-contacts">
+                    <div class="footer-contacts-phone">
+                        <span class="footer-contacts-phone_title">Контактный телефон: </span>
+                        <span class="footer-contacts-phone_tel">
+                            <a href="tel:+00000000">+998 (90) 000-00-00</a>
+                            <a href="tel:+00000000">+998 (90) 000-00-00</a>
+                        </span>
+                    </div>
+                    <div class="footer-contacts-email">
+                        <span class="footer-contacts-email_title">Электронная почта: </span>
+                        <span class="footer-contacts-email_mail">
+                            <a href="mailto:info@info.uz">info@info.uz</a>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="footer-adress">
+                    <span>ул Абай 4А, г. Ташкент, Узбекистан</span>
+                </div>
+            </div>
+            <div class="company">
+                <h4>Компания</h4>
+                <p>Компания "Leasing and rent Sirdarya" является универсальным лизинговым компанией, которая была основана в 2016 году в Узбекистане. Основным видом нашей деятельности является лизинг автотранспорта, которая предоставляется различным компаниям, а также физическим лицам.</p>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d749.091031503824!2d69.25484552921863!3d41.32269479870438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b6cdc8b8407%3A0x2b992696c963a24e!2zNNCwINGD0LvQuNGG0LAg0JDQsdCw0Y8sINCi0LDRiNC60LXQvdGC!5e0!3m2!1sru!2s!4v1571047084731!5m2!1sru!2s" width="400" height="280" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+        </div>
+        <div class="wrapper">
+            <p class="copyright">© 2019 "Leasing and rent Gulistan" | Все права защищены</p>
+        </div>
+    </footer>
 
     <script src="src/jquery.js"></script>
     <script src="src/slick.js"></script>
