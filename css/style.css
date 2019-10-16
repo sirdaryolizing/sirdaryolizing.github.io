@@ -159,11 +159,14 @@ header {
 .contacts-phone_tel a, .contacts-phone_mail a, .contacts-email_tel a, .contacts-email_mail a, .contacts-social_tel a, .contacts-social_mail a, .contacts-lang_tel a, .contacts-lang_mail a {
   text-decoration: none;
   color: #ffffff;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: 'Open Sans Regular';
 }
 
 .contacts-phone_tel a:hover, .contacts-phone_mail a:hover, .contacts-email_tel a:hover, .contacts-email_mail a:hover, .contacts-social_tel a:hover, .contacts-social_mail a:hover, .contacts-lang_tel a:hover, .contacts-lang_mail a:hover {
   text-decoration: none;
-  color: #eaeaea;
+  color: #ff8b38;
 }
 
 .contacts-phone_icon, .contacts-email_icon, .contacts-social_icon, .contacts-lang_icon {
