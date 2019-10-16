@@ -36,8 +36,9 @@ header
 .contacts
     display: flex
     justify-content: space-between
-    align-items: flex-start
+    align-items: center
     padding-top: 10px
+    padding-bottom: 10px
     border-bottom: 1px solid rgba(255,255,255, 0.3)
     &-phone,
     &-email,
@@ -64,9 +65,10 @@ header
                 font-size: 14px
                 line-height: 20px
                 font-family: 'Open Sans Regular'
+                transition: 0.3s
                 &:hover
                     text-decoration: none
-                    color: #ff8b38
+                    color: #6de315
         &_icon
             padding: 2px 4px
             font-size: 16px
@@ -74,9 +76,10 @@ header
             margin-right: 10px
             border-radius: 3px
             color: #000
+            transition: 0.3s
             &:hover
                 text-decoration: none
-                color: #ff8b38
+                color: #6de315
         &_flags
             margin-left: 20px 
             & img
@@ -102,18 +105,20 @@ header
             flex-direction: column
             & span:first-child
                 color: #6de315
-                font-family: 'Open Sans Bold', 'Arial', sans-serif
+                font-family: 'Magistral', 'Arial', sans-serif
                 font-size: 30px
             & span:last-child
-                color: #e4eaee
-                font-family: 'p22_corinthia', 'Arial', sans-serif
-                font-size: 24px
+                color: #eee4e4
+                font-family: 'Marck Script Regular', 'Arial', sans-serif
+                font-size: 16px
                 letter-spacing: 2px
-                margin-top: -12px
+                margin-top: -2px
     &-nav
         width: 600px
+        height: 100%
         & ul
             width: 100%
+            height: 100%
             display: flex
             justify-content: space-between
             align-items: center
@@ -121,10 +126,14 @@ header
             & li a
                 opacity: 0.69
                 color: #ffffff
-                font-family: "Open Sans Semibold"
+                font-family: 'Open Sans Semibold', 'Arial', sans-serif
                 font-size: 18px
                 font-weight: 400
                 text-decoration: none
+                letter-spacing: 1.3px
+                transition: 0.3s
+                &:hover
+                    color: #6de315
 
 .slider
     max-width: 100%
@@ -158,29 +167,8 @@ header
             width: 500px
             top: 30%
             left: 10%
-            &_logo
-                display: flex
-                flex-direction: column
-                align-items: center
-                justify-content: center
-                &-img
-                    width: 120px
-                    height: 120px
-                &-slogan
-                    display: flex
-                    justify-content: center
-                    align-items: center
-                    flex-direction: column
-                    & span:first-child
-                        color: #6de315
-                        font-family: 'Open Sans Bold', 'Arial', sans-serif
-                        font-size: 39px
-                    & span:last-child
-                        color: #ffffff
-                        font-family: 'p22_corinthia', 'Arial', sans-serif
-                        font-size: 24px
-                        letter-spacing: 2px
-                        margin-top: -14px
+            &_logo-img
+                width: 100%
             &_items
                 display: flex
                 flex-direction: column
@@ -569,30 +557,9 @@ footer
         padding: 20px
         border-radius: 5px
         & .footer
-            &-logo
-                display: flex
-                flex-direction: column
-                align-items: center
-                justify-content: center
+            &-logo-img
+                width: 300px
                 margin-bottom: 30px
-                &-img
-                    width: 70px
-                    height: 70px
-                &-slogan
-                    display: flex
-                    justify-content: center
-                    align-items: center
-                    flex-direction: column
-                    & span:first-child
-                        color: #6de315
-                        font-family: 'Open Sans Bold', 'Arial', sans-serif
-                        font-size: 24px
-                    & span:last-child
-                        color: #ffffff
-                        font-family: 'p22_corinthia', 'Arial', sans-serif
-                        font-size: 20px
-                        letter-spacing: 2px
-                        margin-top: -8px
             &-company
                 & p
                     line-height: 20px

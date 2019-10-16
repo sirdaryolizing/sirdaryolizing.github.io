@@ -63,9 +63,17 @@
 }
 
 @font-face {
-  font-family: 'p22_corinthia';
-  src: url("../fonts/p22_corinthia.eot");
-  src: url("../fonts/p22_corinthia.eot?#iefix") format("embedded-opentype"), url("../fonts/p22_corinthia.woff") format("woff"), url("../fonts/p22_corinthia.ttf") format("truetype");
+  font-family: 'Marck Script Regular';
+  src: url("../fonts/MarckScript-Regular.eot");
+  src: url("../fonts/MarckScript-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/MarckScript-Regular.woff") format("woff"), url("../fonts/MarckScript-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Magistral';
+  src: url("../fonts/MagistralBlackC.ttf");
+  src: url("../fonts/MagistralBlackC.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -115,10 +123,11 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -162,11 +171,13 @@ header {
   font-size: 14px;
   line-height: 20px;
   font-family: 'Open Sans Regular';
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .contacts-phone_tel a:hover, .contacts-phone_mail a:hover, .contacts-email_tel a:hover, .contacts-email_mail a:hover, .contacts-social_tel a:hover, .contacts-social_mail a:hover, .contacts-lang_tel a:hover, .contacts-lang_mail a:hover {
   text-decoration: none;
-  color: #ff8b38;
+  color: #6de315;
 }
 
 .contacts-phone_icon, .contacts-email_icon, .contacts-social_icon, .contacts-lang_icon {
@@ -176,11 +187,13 @@ header {
   margin-right: 10px;
   border-radius: 3px;
   color: #000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .contacts-phone_icon:hover, .contacts-email_icon:hover, .contacts-social_icon:hover, .contacts-lang_icon:hover {
   text-decoration: none;
-  color: #ff8b38;
+  color: #6de315;
 }
 
 .contacts-phone_flags, .contacts-email_flags, .contacts-social_flags, .contacts-lang_flags {
@@ -240,24 +253,26 @@ header {
 
 .header-logo_slogan span:first-child {
   color: #6de315;
-  font-family: 'Open Sans Bold', 'Arial', sans-serif;
+  font-family: 'Magistral', 'Arial', sans-serif;
   font-size: 30px;
 }
 
 .header-logo_slogan span:last-child {
-  color: #e4eaee;
-  font-family: 'p22_corinthia', 'Arial', sans-serif;
-  font-size: 24px;
+  color: #eee4e4;
+  font-family: 'Marck Script Regular', 'Arial', sans-serif;
+  font-size: 16px;
   letter-spacing: 2px;
-  margin-top: -12px;
+  margin-top: -2px;
 }
 
 .header-nav {
   width: 600px;
+  height: 100%;
 }
 
 .header-nav ul {
   width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -273,10 +288,17 @@ header {
 .header-nav ul li a {
   opacity: 0.69;
   color: #ffffff;
-  font-family: "Open Sans Semibold";
+  font-family: 'Open Sans Semibold', 'Arial', sans-serif;
   font-size: 18px;
   font-weight: 400;
   text-decoration: none;
+  letter-spacing: 1.3px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header-nav ul li a:hover {
+  color: #6de315;
 }
 
 .slider {
@@ -301,55 +323,8 @@ header {
   left: 10%;
 }
 
-.slider .items .slider-title_logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .slider .items .slider-title_logo-img {
-  width: 120px;
-  height: 120px;
-}
-
-.slider .items .slider-title_logo-slogan {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.slider .items .slider-title_logo-slogan span:first-child {
-  color: #6de315;
-  font-family: 'Open Sans Bold', 'Arial', sans-serif;
-  font-size: 39px;
-}
-
-.slider .items .slider-title_logo-slogan span:last-child {
-  color: #ffffff;
-  font-family: 'p22_corinthia', 'Arial', sans-serif;
-  font-size: 24px;
-  letter-spacing: 2px;
-  margin-top: -14px;
+  width: 100%;
 }
 
 .slider .items .slider-title_items {
@@ -937,56 +912,9 @@ footer .footer-block {
   border-radius: 5px;
 }
 
-footer .footer-block .footer-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 30px;
-}
-
 footer .footer-block .footer-logo-img {
-  width: 70px;
-  height: 70px;
-}
-
-footer .footer-block .footer-logo-slogan {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-footer .footer-block .footer-logo-slogan span:first-child {
-  color: #6de315;
-  font-family: 'Open Sans Bold', 'Arial', sans-serif;
-  font-size: 24px;
-}
-
-footer .footer-block .footer-logo-slogan span:last-child {
-  color: #ffffff;
-  font-family: 'p22_corinthia', 'Arial', sans-serif;
-  font-size: 20px;
-  letter-spacing: 2px;
-  margin-top: -8px;
+  width: 300px;
+  margin-bottom: 30px;
 }
 
 footer .footer-block .footer-company p {

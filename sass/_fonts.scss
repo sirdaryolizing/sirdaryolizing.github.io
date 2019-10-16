@@ -79,11 +79,19 @@
     }
 
 @font-face {
-     font-family: 'p22_corinthia';
-     src: url('../fonts/p22_corinthia.eot');
-     src: url('../fonts/p22_corinthia.eot?#iefix') format('embedded-opentype'),
-          url('../fonts/p22_corinthia.woff') format('woff'),
-          url('../fonts/p22_corinthia.ttf') format('truetype');
+     font-family: 'Marck Script Regular';
+     src: url('../fonts/MarckScript-Regular.eot');
+     src: url('../fonts/MarckScript-Regular.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/MarckScript-Regular.woff') format('woff'),
+          url('../fonts/MarckScript-Regular.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+     }
+
+@font-face {
+     font-family: 'Magistral';
+     src: url('../fonts/MagistralBlackC.ttf');
+     src: url('../fonts/MagistralBlackC.ttf') format('truetype');
      font-weight: normal;
      font-style: normal;
      }
