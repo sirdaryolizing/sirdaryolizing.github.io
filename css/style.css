@@ -395,6 +395,8 @@ header {
   text-decoration: none;
   margin-left: 5px;
   border-radius: 5px;
+  background: none;
+  cursor: pointer;
 }
 
 .slider .truck-bg {
@@ -984,14 +986,39 @@ footer .footer-block .footer-logo-slogan span:last-child {
   margin-top: -8px;
 }
 
+footer .footer-block .footer-company p {
+  line-height: 20px;
+  font-family: 'Open Sans Regular';
+  font-size: 14px;
+  color: #ffffff;
+  width: 300px;
+  text-align: justify;
+}
+
 footer .footer-block .footer-contacts {
-  margin-bottom: 30px;
+  width: 365px;
+}
+
+footer .footer-block .footer-contacts h4 {
+  color: #6de315;
+  font-family: 'Raleway Bold';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 footer .footer-block .footer-contacts-phone, footer .footer-block .footer-contacts-email {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1002,7 +1029,7 @@ footer .footer-block .footer-contacts-phone, footer .footer-block .footer-contac
 }
 
 footer .footer-block .footer-contacts-phone_title, footer .footer-block .footer-contacts-email_title {
-  color: #ffffff;
+  color: #6de315;
   font-family: 'Open Sans Regular';
   font-size: 16px;
   font-weight: 400;
@@ -1023,44 +1050,52 @@ footer .footer-block .footer-contacts-phone_tel, footer .footer-block .footer-co
           align-items: flex-start;
 }
 
+footer .footer-block .footer-contacts-phone_tel span, footer .footer-block .footer-contacts-phone_mail span, footer .footer-block .footer-contacts-email_tel span, footer .footer-block .footer-contacts-email_mail span {
+  color: #9fd477;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: 'Raleway Light';
+  margin-top: 5px;
+}
+
 footer .footer-block .footer-contacts-phone_tel a, footer .footer-block .footer-contacts-phone_mail a, footer .footer-block .footer-contacts-email_tel a, footer .footer-block .footer-contacts-email_mail a {
   text-decoration: none;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
+  font-family: 'Open Sans Regular';
 }
 
 footer .footer-block .footer-contacts-phone_tel a:hover, footer .footer-block .footer-contacts-phone_mail a:hover, footer .footer-block .footer-contacts-email_tel a:hover, footer .footer-block .footer-contacts-email_mail a:hover {
   text-decoration: none;
-  color: #eaeaea;
+  color: #ff8b38;
 }
 
-footer .footer-block .footer-adress {
-  color: #ffffff;
+footer .footer-block .footer-contacts-adress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer .footer-block .footer-contacts-adress span:nth-child(1) {
+  color: #6de315;
   font-family: 'Open Sans Regular';
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 1px;
 }
 
-footer .footer-block .company h4 {
+footer .footer-block .footer-contacts-adress span:nth-child(2) {
   color: #ffffff;
-  font-family: 'Raleway Bold';
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 30px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-footer .footer-block .company p {
-  line-height: 20px;
   font-family: 'Open Sans Regular';
-  font-size: 14px;
-  color: #ffffff;
-  width: 265px;
-  text-align: justify;
+  font-size: 15px;
 }
 
 .modal {
@@ -1095,27 +1130,9 @@ footer .footer-block .company p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 800px;
+  height: 775px;
   border-radius: 5px;
   background: #fff;
-}
-
-.modal-app h3 {
-  color: #212121;
-  font-family: 'Raleway Bold';
-  font-size: 26px;
-  line-height: 36px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.modal-app hr {
-  border: none;
-  width: 100px;
-  height: 2px;
-  background: #ff8b38;
-  margin-bottom: 10px;
-  margin-top: 10px;
 }
 
 .modal-app .modal-app_close {
@@ -1132,137 +1149,6 @@ footer .footer-block .company p {
           transform: rotate(180deg);
   -webkit-transition: 1s;
   transition: 1s;
-}
-
-.modal-app_form {
-  width: 600px;
-  padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.modal-app_form button {
-  width: 200px;
-  color: #ffffff;
-  font-family: "Open Sans Semibold";
-  font-size: 15px;
-  line-height: 20px;
-  padding: 10px 30px;
-  background: #ff8b38;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-.modal-app_form .modal-slider {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 15px;
-}
-
-.modal-app_form h6 {
-  color: #212121;
-  font-family: 'Raleway Regular';
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 26px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-.modal-app_form_data {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.modal-app_form_data label, .modal-app_form_data span {
-  line-height: 20px;
-  font-family: 'Open Sans Semibold';
-  font-size: 16px;
-  color: #212121;
-}
-
-.modal-app_form_data label sup, .modal-app_form_data span sup {
-  color: #ff0000;
-}
-
-.modal-app_form_data input {
-  width: 40%;
-  border: none;
-  outline: none;
-  border-bottom: 2px solid #ff8b38;
-  background: transparent;
-  padding: 3px 15px;
-  line-height: 20px;
-  font-family: 'Open Sans Semibold';
-  font-size: 16px;
-  color: #212121;
-  margin-bottom: 15px;
-}
-
-.modal-app_form_data input::-webkit-outer-spin-button, .modal-app_form_data input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-
-.modal-app_form_data input::-webkit-input-placeholder {
-  font-weight: 300;
-  color: #c7c7c7;
-}
-
-.modal-app_form_data input:-ms-input-placeholder {
-  font-weight: 300;
-  color: #c7c7c7;
-}
-
-.modal-app_form_data input::-ms-input-placeholder {
-  font-weight: 300;
-  color: #c7c7c7;
-}
-
-.modal-app_form_data input::placeholder {
-  font-weight: 300;
-  color: #c7c7c7;
-}
-
-.modal-app_form_data #lease-item-date, .modal-app_form_data #lease-item-prepaid {
-  -webkit-appearance: none;
-  height: 1px;
-  background: #ff8b38;
-  border-radius: 3px;
-  margin-bottom: 5px;
-}
-
-.modal-app_form_data #lease-item-date::-webkit-slider-thumb, .modal-app_form_data #lease-item-prepaid::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #ff8b38;
-  -webkit-box-shadow: 0 0 4px 3px #fff;
-          box-shadow: 0 0 4px 3px #fff;
 }
 
 .modal-callback {

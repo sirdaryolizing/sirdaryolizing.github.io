@@ -209,6 +209,8 @@ header
                 text-decoration: none
                 margin-left: 5px
                 border-radius: 5px
+                background: none
+                cursor: pointer
     & .truck-bg
         background: url(../img/bg_truck.jpg) bottom center no-repeat
         background-size: cover
@@ -588,57 +590,76 @@ footer
                         font-size: 20px
                         letter-spacing: 2px
                         margin-top: -8px
-            &-contacts
-                margin-bottom: 30px
-                &-phone,
-                &-email,
-                    display: flex
-                    justify-content: space-between
-                    align-items: flex-start
-                    margin-bottom: 15px
-                    &_title
-                        color:  #ffffff
-                        font-family: 'Open Sans Regular'
-                        font-size: 16px
-                        font-weight: 400
-                        letter-spacing: 1px
-                        margin-right: 10px
-                    &_tel,
-                    &_mail
-                        display: flex
-                        flex-direction: column
-                        align-items: flex-start 
-                        & a
-                            text-decoration: none
-                            color: #ffffff
-                            font-size: 16px
-                            line-height: 20px
-                            &:hover
-                                text-decoration: none
-                                color: #eaeaea
-            &-adress
-                color:  #ffffff
-                font-family: 'Open Sans Regular'
-                font-size: 16px
-                font-weight: 400
-                letter-spacing: 1px
-        & .company
+            &-company
+                & p
+                    line-height: 20px
+                    font-family: 'Open Sans Regular'
+                    font-size: 14px
+                    color: #ffffff
+                    width: 300px
+                    text-align: justify
+        & .footer-contacts
+            width: 365px
             & h4
-                color: #ffffff
+                color: #6de315
                 font-family: 'Raleway Bold'
                 font-size: 18px
                 font-weight: 400
                 line-height: 30px
                 text-transform: uppercase
+                margin-top: 0
                 margin-bottom: 20px
                 text-align: center
-            & p
-                line-height: 20px
-                font-family: 'Open Sans Regular'
-                font-size: 14px
-                color: #ffffff
-                width: 265px
-                text-align: justify
+            &-phone,
+            &-email,
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                align-items: flex-start
+                margin-bottom: 15px
+                &_title
+                    color:  #6de315
+                    font-family: 'Open Sans Regular'
+                    font-size: 16px
+                    font-weight: 400
+                    letter-spacing: 1px
+                    margin-right: 10px
+                &_tel,
+                &_mail
+                    display: flex
+                    flex-direction: column
+                    align-items: flex-start 
+                    & span
+                        color: #9fd477
+                        font-size: 16px
+                        line-height: 20px
+                        font-family: 'Raleway Light'
+                        margin-top: 5px
+                    & a
+                        text-decoration: none
+                        color: #ffffff
+                        font-size: 14px
+                        line-height: 20px
+                        font-family: 'Open Sans Regular'
+                        &:hover
+                            text-decoration: none
+                            color: #ff8b38
+            &-adress
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+                & span:nth-child(1)
+                    color:  #6de315
+                    font-family: 'Open Sans Regular'
+                    font-size: 16px
+                    font-weight: 400
+                    letter-spacing: 1px
+                & span:nth-child(2)
+                    color:  #ffffff
+                    font-family: 'Open Sans Regular'
+                    font-size: 15px
+
+        
 // end footer-section
 
 // modal
@@ -661,24 +682,9 @@ footer
         align-items: center
         justify-content: space-between
         width: 800px
-        // box-shadow: 0 0 7px 5px #f8af7b
+        height: 775px
         border-radius: 5px
         background: #fff
-        & h3
-            color: #212121
-            font-family: 'Raleway Bold'
-            font-size: 26px
-            line-height: 36px
-            text-transform: uppercase
-            margin-bottom: 10px
-            text-align: center
-        & hr
-            border: none
-            width: 100px
-            height: 2px
-            background: #ff8b38
-            margin-bottom: 10px
-            margin-top: 10px
         & .modal-app_close
             position: absolute
             top: 15px
@@ -689,86 +695,10 @@ footer
             &:hover
                 transform: rotate(180deg)
                 transition: 1s
-        &_form
-            width: 600px
-            padding: 20px
-            display: flex
-            justify-content: center
-            align-items: center
-            flex-direction: column
-            & button
-                width: 200px
-                color: #ffffff
-                font-family: "Open Sans Semibold"
-                font-size: 15px
-                line-height: 20px
-                padding: 10px 30px
-                background: #ff8b38
-                border-radius: 5px
-                border: none
-                outline: none
-                cursor: pointer
-                margin-top: 20px
-            & .modal-slider
-                align-items: center
-                margin-bottom: 15px
-            & h6
-                color: #212121
-                font-family: 'Raleway Regular'
-                font-size: 18px
-                font-weight: 600
-                line-height: 26px
-                text-transform: uppercase
-                margin-bottom: 10px
-                margin-top: 10px
-            &_data
-                width: 100%
-                display: flex
-                justify-content: space-between
-                align-items: flex-start
-                & label, span
-                    line-height: 20px
-                    font-family: 'Open Sans Semibold'
-                    font-size: 16px
-                    color: #212121
-                    & sup
-                        color: #ff0000
-                & input
-                    width: 40%
-                    border: none
-                    outline: none
-                    border-bottom: 2px solid #ff8b38
-                    background: transparent
-                    padding: 3px 15px
-                    line-height: 20px
-                    font-family: 'Open Sans Semibold'
-                    font-size: 16px
-                    color: #212121
-                    margin-bottom: 15px
-                    &::-webkit-outer-spin-button,
-                    &::-webkit-inner-spin-button
-                        -webkit-appearance: none
-                    &::placeholder
-                        font-weight: 300
-                        color: #c7c7c7
-                & #lease-item-date, #lease-item-prepaid
-                    -webkit-appearance: none
-                    height: 1px
-                    background: #ff8b38
-                    border-radius: 3px
-                    margin-bottom: 5px
-                    &::-webkit-slider-thumb
-                        -webkit-appearance: none
-                        width: 20px
-                        height: 20px
-                        border-radius: 50%
-                        background: #ff8b38
-                        box-shadow: 0 0 4px 3px #fff
     &-callback
         width: 500px
         position: relative 
         display: none
-        // box-shadow: 0 0 3px 1px #00aeef
         &_close
             position: absolute
             top: 15px
