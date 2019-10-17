@@ -162,7 +162,7 @@ $(document).ready(function(){
         $('.modal').fadeOut();
         $('main').css('filter', 'none');
         $('body').css('overflow', '');
-        $('.modal-app, .modal-callback, .modal-about').css('display', 'none');
+        $('.modal-app, .modal-callback, .modal-service').css('display', 'none');
     });
     
     $(document).mouseup(function (e) {
@@ -179,7 +179,7 @@ $(document).ready(function(){
 
     $('.service-btn').click(function(){
         showModal();
-        $('.modal-about').css('display', 'flex');
+        $('.modal-service').css('display', 'flex');
     });
 
     function showModal(){
