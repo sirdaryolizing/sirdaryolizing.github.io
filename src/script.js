@@ -157,7 +157,7 @@ $(document).ready(function(){
         $('.modal-callback').css('display', 'block');
     });
     
-    $('.modal-app_close, .modal-callback_close, .modal-about_close').click(function () {
+    $('.modal-app_close, .modal-callback_close, .modal-service_close').click(function () {
         $('.modal').css('display', '');
         $('.modal').fadeOut();
         $('main').css('filter', 'none');
