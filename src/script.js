@@ -149,50 +149,45 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $('.slider-title_button').click(function () {
-        $('.modal').css('display', 'flex');
-        $('.modal').fadeIn();
-        $('main').css('filter', 'blur(5px)');
-        $('body').css('overflow', 'hidden');
+        showModal();
         $('.modal-app').css('display', 'flex');
     });
     $('.contact-us').click(function(){
-        $('.modal').css('display', 'flex');
-        $('.modal').fadeIn();
-        $('main').css('filter', 'blur(5px)');
-        $('body').css('overflow', 'hidden');
+        showModal();
         $('.modal-callback').css('display', 'block');
     });
     
-    $('.modal-app_close, .modal-callback_close').click(function () {
+    $('.modal-app_close, .modal-callback_close, .modal-about_close').click(function () {
         $('.modal').css('display', '');
         $('.modal').fadeOut();
         $('main').css('filter', 'none');
         $('body').css('overflow', '');
-        $('.modal-app').css('display', 'none');
-        $('.modal-callback').css('display', 'none');
+        $('.modal-app, .modal-callback, .modal-about').css('display', 'none');
     });
     
     $(document).mouseup(function (e) {
-        var popup = $('.modal-app_form');
-        if (e.target != popup[0] && popup.has(e.target).length === 0) {
-            $('.modal').fadeOut();
-            $('main').css('filter', 'none');
-            $('body').css('overflow', '');
+        var popup = $('.modal-popup');
+        
+        for(i=0; i<popup.length; i++){
+            if (e.target != popup[i] && popup.has(e.target).length === 0) {
+                $('.modal').fadeOut();
+                $('main').css('filter', 'none');
+                $('body').css('overflow', '');
+            }
         }
     });
 
-    $('#lease-item-date').on('input', function(){
-        var modalMonth = $('#lease-item-date').val(),
-            month = $('#lease-item-month');
-
-        month.text(modalMonth + 'мес.');
+    $('.service-btn').click(function(){
+        showModal();
+        $('.modal-about').css('display', 'flex');
     });
-    $('#lease-item-prepaid').on('input', function(){
-        var modalPercent = $('#lease-item-prepaid').val(),
-            percent = $('#lease-item-percent');
 
-        percent.text(modalPercent + '%');
-    });
+    function showModal(){
+        $('.modal').css('display', 'flex');
+        $('.modal').fadeIn();
+        $('main').css('filter', 'blur(5px)');
+        $('body').css('overflow', 'hidden');
+    }
 });
 
 

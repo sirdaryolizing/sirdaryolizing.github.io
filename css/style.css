@@ -252,13 +252,13 @@ header {
 }
 
 .header-logo_slogan span:first-child {
-  color: #6de315;
+  color: #4be01d;
   font-family: 'Magistral', 'Arial', sans-serif;
   font-size: 30px;
 }
 
 .header-logo_slogan span:last-child {
-  color: #eee4e4;
+  color: #fe0d50;
   font-family: 'Marck Script Regular', 'Arial', sans-serif;
   font-size: 16px;
   letter-spacing: 2px;
@@ -298,7 +298,7 @@ header {
 }
 
 .header-nav ul li a:hover {
-  color: #6de315;
+  color: #4be01d;
 }
 
 .slider {
@@ -669,7 +669,7 @@ header {
   margin-bottom: 20px;
 }
 
-.service-items_description a {
+.service-items_description-btn {
   color: #ffffff;
   font-family: "Open Sans Semibold";
   font-size: 15px;
@@ -678,12 +678,10 @@ header {
   padding: 10px 30px;
   background: #ff8b38;
   border-radius: 5px;
-  text-decoration: none;
-}
-
-.service-items_description a:hover {
-  text-decoration: none;
-  color: #fff;
+  border: none;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
 }
 
 .section-calculator {
@@ -979,6 +977,7 @@ footer .footer-block .footer-contacts-phone_tel, footer .footer-block .footer-co
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  margin-left: 15px;
 }
 
 footer .footer-block .footer-contacts-phone_tel span, footer .footer-block .footer-contacts-phone_mail span, footer .footer-block .footer-contacts-email_tel span, footer .footer-block .footer-contacts-email_mail span {
@@ -995,6 +994,7 @@ footer .footer-block .footer-contacts-phone_tel a, footer .footer-block .footer-
   font-size: 14px;
   line-height: 20px;
   font-family: 'Open Sans Regular';
+  margin-left: 15px;
 }
 
 footer .footer-block .footer-contacts-phone_tel a:hover, footer .footer-block .footer-contacts-phone_mail a:hover, footer .footer-block .footer-contacts-email_tel a:hover, footer .footer-block .footer-contacts-email_mail a:hover {
@@ -1057,9 +1057,9 @@ footer .footer-block .footer-contacts-adress span:nth-child(2) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 800px;
   height: 775px;
   border-radius: 5px;
@@ -1092,7 +1092,134 @@ footer .footer-block .footer-contacts-adress span:nth-child(2) {
   position: absolute;
   top: 15px;
   right: 15px;
-  font-size: 18px;
+  font-size: 22px;
   cursor: pointer;
+}
+
+.modal-about {
+  width: 90%;
+  height: 90vh;
+  background: #fff;
+  position: relative;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(../img/hero-man.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.modal-about_close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.modal-about_block {
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+}
+
+.modal-about_block-logo {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.modal-about_block-logo img {
+  max-width: 240px;
+}
+
+.modal-about_block-content {
+  width: 65%;
+  height: 85%;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-box-shadow: 0 0 3px 7px rgba(255, 255, 255, 0.7);
+          box-shadow: 0 0 3px 7px rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.modal-about_block-content::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.modal-about_block-content h4 {
+  color: #212121;
+  font-family: 'Raleway Regular';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modal-about_block-content hr {
+  border: none;
+  width: 100px;
+  height: 2px;
+  background: #ff8b38;
+  margin-bottom: 40px;
+}
+
+.modal-about_block-content table {
+  width: 70%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.modal-about_block-content table tr {
+  width: 100%;
+  height: 30px;
+}
+
+.modal-about_block-content table tr th {
+  font-family: 'Open Sans Semibold';
+  font-size: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.modal-about_block-content table tr td {
+  font-family: 'Open Sans Regular';
+  font-size: 14px;
+  padding-left: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.modal-about_block-content table tr td:first-child {
+  width: 33%;
+  font-weight: 600;
+}
+
+.modal-about_block-content table tr td ul li {
+  list-style-type: disc;
+  margin-left: 25px;
+  line-height: 20px;
+}
+
+.modal-about_block-content table tr td ul li a {
+  font-weight: 600;
+  color: #212121;
+}
+
+.modal-about_block-content table tr td ol {
+  padding: 0;
+  margin: 0;
+}
+
+.modal-about_block-content table tr td ol li {
+  margin-left: 25px;
+  line-height: 20px;
 }
 /*# sourceMappingURL=style.css.map */
