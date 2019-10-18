@@ -101,9 +101,16 @@ a {
   margin: 0 auto;
 }
 
+section {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 .section-main {
   width: 100%;
   height: 100vh;
+  padding: 0;
 }
 
 header {
@@ -416,9 +423,6 @@ header {
 }
 
 .section-about {
-  width: 100%;
-  padding-top: 100px;
-  padding-bottom: 100px;
   background: #f5f5f5;
 }
 
@@ -429,7 +433,7 @@ header {
   font-weight: 400;
   line-height: 43px;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -438,6 +442,7 @@ header {
   width: 100px;
   height: 2px;
   background: #ff8b38;
+  margin-bottom: 40px;
 }
 
 .about {
@@ -477,18 +482,13 @@ header {
   padding: 10px 30px;
   background: #ff8b38;
   border-radius: 5px;
-  text-decoration: none;
+  border: none;
   cursor: pointer;
+  outline: none;
 }
 
 .about-img img {
   width: 400px;
-}
-
-.section-advantage {
-  width: 100%;
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 
 .advantage {
@@ -515,6 +515,7 @@ header {
   line-height: 43px;
   text-transform: uppercase;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .advantage hr {
@@ -522,6 +523,7 @@ header {
   width: 100px;
   height: 2px;
   background: #ff8b38;
+  margin-bottom: 40px;
 }
 
 .advantage span {
@@ -602,9 +604,6 @@ header {
 }
 
 .section-service {
-  width: 100%;
-  padding-top: 100px;
-  padding-bottom: 100px;
   background: #f5f5f5;
 }
 
@@ -680,15 +679,12 @@ header {
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  outline: none;
   -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
-  outline: none;
 }
 
 .section-calculator {
-  width: 100%;
-  padding-top: 100px;
-  padding-bottom: 100px;
   background: url(../img/calculator.png) center no-repeat;
   background-size: cover;
 }
@@ -818,19 +814,14 @@ header {
   color: #ffffff;
   font-family: "Open Sans Semibold";
   font-size: 15px;
+  font-weight: 400;
   line-height: 20px;
   padding: 10px 30px;
   background: #ff8b38;
   border-radius: 5px;
   border: none;
-  outline: none;
   cursor: pointer;
-}
-
-.section-partners {
-  width: 100%;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  outline: none;
 }
 
 .section-partners h3 {
@@ -895,7 +886,14 @@ footer .copyright {
   text-align: center;
 }
 
-footer .footer-block {
+footer .footer-wrapper {
+  -webkit-box-shadow: 0 0 7px 3px #eaeaea;
+          box-shadow: 0 0 7px 3px #eaeaea;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+footer .footer-wrapper .footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -905,18 +903,14 @@ footer .footer-block {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-shadow: 0 0 7px 3px #eaeaea;
-          box-shadow: 0 0 7px 3px #eaeaea;
-  padding: 20px;
-  border-radius: 5px;
 }
 
-footer .footer-block .footer-logo-img {
+footer .footer-wrapper .footer-about_logo-img {
   width: 300px;
   margin-bottom: 30px;
 }
 
-footer .footer-block .footer-company p {
+footer .footer-wrapper .footer-about_company p {
   line-height: 20px;
   font-family: 'Open Sans Regular';
   font-size: 14px;
@@ -925,11 +919,11 @@ footer .footer-block .footer-company p {
   text-align: justify;
 }
 
-footer .footer-block .footer-contacts {
-  width: 365px;
+footer .footer-wrapper .footer-block {
+  width: 800px;
 }
 
-footer .footer-block .footer-contacts h4 {
+footer .footer-wrapper .footer-block h4 {
   color: #6de315;
   font-family: 'Raleway Bold';
   font-size: 18px;
@@ -941,7 +935,19 @@ footer .footer-block .footer-contacts h4 {
   text-align: center;
 }
 
-footer .footer-block .footer-contacts-phone, footer .footer-block .footer-contacts-email {
+footer .footer-wrapper .footer-block_contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer .footer-wrapper .footer-block_contacts-number .footer-contacts-phone,
+footer .footer-wrapper .footer-block_contacts-number .footer-contacts-email {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -958,7 +964,8 @@ footer .footer-block .footer-contacts-phone, footer .footer-block .footer-contac
   margin-bottom: 15px;
 }
 
-footer .footer-block .footer-contacts-phone_title, footer .footer-block .footer-contacts-email_title {
+footer .footer-wrapper .footer-block_contacts-number .footer-contacts-phone_title,
+footer .footer-wrapper .footer-block_contacts-number .footer-contacts-email_title {
   color: #6de315;
   font-family: 'Open Sans Regular';
   font-size: 16px;
@@ -967,7 +974,9 @@ footer .footer-block .footer-contacts-phone_title, footer .footer-block .footer-
   margin-right: 10px;
 }
 
-footer .footer-block .footer-contacts-phone_tel, footer .footer-block .footer-contacts-phone_mail, footer .footer-block .footer-contacts-email_tel, footer .footer-block .footer-contacts-email_mail {
+footer .footer-wrapper .footer-block_contacts-number .footer-contacts-phone_tel, footer .footer-wrapper .footer-block_contacts-number .footer-contacts-phone_mail,
+footer .footer-wrapper .footer-block_contacts-number .footer-contacts-email_tel,
+footer .footer-wrapper .footer-block_contacts-number .footer-contacts-email_mail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -981,7 +990,9 @@ footer .footer-block .footer-contacts-phone_tel, footer .footer-block .footer-co
   margin-left: 15px;
 }
 
-footer .footer-block .footer-contacts-phone_tel span, footer .footer-block .footer-contacts-phone_mail span, footer .footer-block .footer-contacts-email_tel span, footer .footer-block .footer-contacts-email_mail span {
+footer .footer-wrapper .footer-block_contacts-number .footer-contacts-phone_tel span, footer .footer-wrapper .footer-block_contacts-number .footer-contacts-phone_mail span,
+footer .footer-wrapper .footer-block_contacts-number .footer-contacts-email_tel span,
+footer .footer-wrapper .footer-block_contacts-number .footer-contacts-email_mail span {
   color: #9fd477;
   font-size: 16px;
   line-height: 20px;
@@ -989,7 +1000,9 @@ footer .footer-block .footer-contacts-phone_tel span, footer .footer-block .foot
   margin-top: 5px;
 }
 
-footer .footer-block .footer-contacts-phone_tel a, footer .footer-block .footer-contacts-phone_mail a, footer .footer-block .footer-contacts-email_tel a, footer .footer-block .footer-contacts-email_mail a {
+footer .footer-wrapper .footer-block_contacts-number .footer-contacts-phone_tel a, footer .footer-wrapper .footer-block_contacts-number .footer-contacts-phone_mail a,
+footer .footer-wrapper .footer-block_contacts-number .footer-contacts-email_tel a,
+footer .footer-wrapper .footer-block_contacts-number .footer-contacts-email_mail a {
   text-decoration: none;
   color: #ffffff;
   font-size: 14px;
@@ -998,12 +1011,19 @@ footer .footer-block .footer-contacts-phone_tel a, footer .footer-block .footer-
   margin-left: 15px;
 }
 
-footer .footer-block .footer-contacts-phone_tel a:hover, footer .footer-block .footer-contacts-phone_mail a:hover, footer .footer-block .footer-contacts-email_tel a:hover, footer .footer-block .footer-contacts-email_mail a:hover {
+footer .footer-wrapper .footer-block_contacts-number .footer-contacts-phone_tel a:hover, footer .footer-wrapper .footer-block_contacts-number .footer-contacts-phone_mail a:hover,
+footer .footer-wrapper .footer-block_contacts-number .footer-contacts-email_tel a:hover,
+footer .footer-wrapper .footer-block_contacts-number .footer-contacts-email_mail a:hover {
   text-decoration: none;
   color: #ff8b38;
 }
 
-footer .footer-block .footer-contacts-adress, footer .footer-block .footer-contacts-requisite {
+footer .footer-wrapper .footer-block_contacts-adress {
+  width: 400px;
+}
+
+footer .footer-wrapper .footer-block_contacts-adress .footer-adress,
+footer .footer-wrapper .footer-block_contacts-adress .footer-requisite {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1014,17 +1034,21 @@ footer .footer-block .footer-contacts-adress, footer .footer-block .footer-conta
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  margin-bottom: 15px;
 }
 
-footer .footer-block .footer-contacts-adress span:nth-child(1), footer .footer-block .footer-contacts-requisite span:nth-child(1) {
+footer .footer-wrapper .footer-block_contacts-adress .footer-adress span:nth-child(1),
+footer .footer-wrapper .footer-block_contacts-adress .footer-requisite span:nth-child(1) {
   color: #6de315;
   font-family: 'Open Sans Regular';
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 1px;
+  margin-bottom: 10px;
 }
 
-footer .footer-block .footer-contacts-adress span, footer .footer-block .footer-contacts-requisite span {
+footer .footer-wrapper .footer-block_contacts-adress .footer-adress span,
+footer .footer-wrapper .footer-block_contacts-adress .footer-requisite span {
   color: #ffffff;
   font-family: 'Open Sans Regular';
   font-size: 15px;
@@ -1151,8 +1175,14 @@ footer .footer-block .footer-contacts-adress span, footer .footer-block .footer-
 }
 
 .modal-service_block-content::-webkit-scrollbar {
-  width: 0;
-  background: transparent;
+  width: 10px;
+  background: rgba(255, 139, 56, 0.5);
+}
+
+.modal-service_block-content::-webkit-scrollbar-thumb {
+  width: 10px;
+  height: 10px;
+  background: #ff8b38;
 }
 
 .modal-service_block-content h4 {
@@ -1240,6 +1270,10 @@ footer .footer-block .footer-contacts-adress span, footer .footer-block .footer-
 .modal-service_block-content_docs a {
   display: block;
   width: 250px;
+  -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  text-align: center;
   color: #ffffff;
   font-family: "Open Sans Semibold";
   font-size: 15px;
@@ -1249,10 +1283,7 @@ footer .footer-block .footer-contacts-adress span, footer .footer-block .footer-
   background: #ff8b38;
   border-radius: 5px;
   border: none;
-  -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
-  text-decoration: none;
+  cursor: pointer;
   outline: none;
-  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
