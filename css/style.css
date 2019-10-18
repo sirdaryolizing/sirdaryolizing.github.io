@@ -1003,7 +1003,7 @@ footer .footer-block .footer-contacts-phone_tel a:hover, footer .footer-block .f
   color: #ff8b38;
 }
 
-footer .footer-block .footer-contacts-adress {
+footer .footer-block .footer-contacts-adress, footer .footer-block .footer-contacts-requisite {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1016,7 +1016,7 @@ footer .footer-block .footer-contacts-adress {
           align-items: flex-start;
 }
 
-footer .footer-block .footer-contacts-adress span:nth-child(1) {
+footer .footer-block .footer-contacts-adress span:nth-child(1), footer .footer-block .footer-contacts-requisite span:nth-child(1) {
   color: #6de315;
   font-family: 'Open Sans Regular';
   font-size: 16px;
@@ -1024,7 +1024,7 @@ footer .footer-block .footer-contacts-adress span:nth-child(1) {
   letter-spacing: 1px;
 }
 
-footer .footer-block .footer-contacts-adress span:nth-child(2) {
+footer .footer-block .footer-contacts-adress span, footer .footer-block .footer-contacts-requisite span {
   color: #ffffff;
   font-family: 'Open Sans Regular';
   font-size: 15px;
