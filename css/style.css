@@ -385,22 +385,22 @@ header {
 }
 
 .slider .truck-bg {
-  background: url(../img/bg_truck.jpg) bottom center no-repeat;
+  background: url(../img/bg_truck.webp) bottom center no-repeat;
   background-size: cover;
 }
 
 .slider .car-bg {
-  background: url(../img/rentacar.jpg) bottom center no-repeat;
+  background: url(../img/rentacar.webp) bottom center no-repeat;
   background-size: cover;
 }
 
 .slider .office-bg {
-  background: url(../img/office-bg.jpg) bottom center no-repeat;
+  background: url(../img/office-bg.webp) bottom center no-repeat;
   background-size: cover;
 }
 
 .slider .heavy-bg {
-  background: url(../img/heavy-trucks.jpg) bottom center no-repeat;
+  background: url(../img/heavy-trucks.webp) bottom center no-repeat;
   background-size: cover;
 }
 
@@ -685,7 +685,7 @@ header {
 }
 
 .section-calculator {
-  background: url(../img/calculator.png) center no-repeat;
+  background: url(../img/calculator.webp) center no-repeat;
   background-size: cover;
 }
 
@@ -1133,7 +1133,7 @@ footer .footer-wrapper .footer-block_contacts-adress .footer-requisite span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url(../img/hero-man.jpg) center no-repeat;
+  background: url(../img/hero-man.webp) center no-repeat;
   background-size: cover;
 }
 
