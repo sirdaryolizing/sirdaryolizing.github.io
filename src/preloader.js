@@ -20,6 +20,9 @@ function image_loaded(){
             if( !preloader.classList.contains('done') ){
                 preloader.classList.add('done');
             }
+            setTimeout(function(){
+                preloader.remove();
+            }, 4000);
         }, 2000);
     }
 }
