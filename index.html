@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="shortcut icon" href="img/favicon-logo.png" type="image/png">
 </head>
 <body>
@@ -120,7 +121,7 @@
             <div class="wrapper">
                 <h3>О нас</h3>
                 <hr>
-                <div class="about">
+                <div class="wow fadeInLeft about" data-wow-offset="300">
                     <div class="about-title">
                         <p>На сегодняшний день одной из самых эффективных систем покупок автомобилей является лизинг. ЛК ООО "Leasing and rent Gulistan" является универсальным лизинговой компанией, которая была основана в 2016 году в Узбекистане. Основным видом нашей деятельности является лизинг автотранспорта, которая предоставляется различным компаниям, а также физическим лицам.</p>
                         <p>Лизинг даёт владельцу возможность выкуп автомобиля по окончании срока договора, то есть после погашения всех платежей, транспорт переходит в собственность владельца, а до этого момента он будет находится на балансе нашей компании.
@@ -129,7 +130,7 @@
     
                         <a class="contact-us">Заказать обратный звонок</a>
                     </div>
-                    <div class="about-img">
+                    <div class="wow zoomIn about-img" data-wow-offset="300" data-wow-delay="0.7s">
                         <img src="img/city.png" alt="city">
                     </div>
                 </div>
@@ -172,7 +173,7 @@
                 <hr>
                 <div class="service">
                     <div class="service-items">
-                        <div class="service-items_img">
+                        <div class="wow zoomIn service-items_img" data-wow-offset="300">
                             <img src="img/trucks.png" alt="Trucks">
                         </div>
                         <div class="service-items_description">
@@ -190,13 +191,13 @@
                             <p>ЛК ООО "Leasing and rent Gulistan" - предлагает индивидуальным предпринимателям и юридическим лицам в лизинг легковой транспорт, полноразмерные фургоны, малотоннажные автомобили отечественного и импортного производства.</p>
                             <button class="service-items_description-btn service-btn">Подробнее</button>
                         </div>
-                        <div class="service-items_img">
+                        <div class="wow zoomIn service-items_img" data-wow-offset="300">
                             <img src="img/uzb-cars.webp" alt="Uz-chevrolet">
                         </div>
                     </div>
                     <hr>
                     <div class="service-items">
-                        <div class="service-items_img">
+                        <div class="wow zoomIn service-items_img" data-wow-offset="300">
                             <img src="img/private-office.jpg" alt="office">
                         </div>
                         <div class="service-items_description">
@@ -214,7 +215,7 @@
                             <p>Большинство компаний, испытывающих потребность в покупке спецтехники, работает в сезонном бизнесе, со спецификой которого мы хорошо знакомы.</p>
                             <button class="service-items_description-btn service-btn">Подробнее</button>
                         </div>
-                        <div class="service-items_img">
+                        <div class="wow zoomIn service-items_img" data-wow-offset="300">
                             <img src="img/spectehnika.jpg" alt="special">
                         </div>
                     </div>
@@ -471,7 +472,12 @@
 
     <script src="src/jquery.js"></script>
     <script src="src/slick.js"></script>
+    <script src="src/wow.min.js"></script>
     <script src="src/script.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
 
     <script>
             (function(w,d,u){
