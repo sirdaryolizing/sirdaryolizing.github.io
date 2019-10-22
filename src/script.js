@@ -128,12 +128,12 @@ $(document).ready(function(){
             $('header').css({
                 height: '70px',
                 background: '#333333'});
-            $('.contacts').hide();
+            $('.head-contacts').hide();
         }else{
             $('header').css({
                 height: '120px',
                 background: 'rgba(0,0,0, 0.7)'});
-            $('.contacts').show();
+            $('.head-contacts').show();
         }
     });
 });
