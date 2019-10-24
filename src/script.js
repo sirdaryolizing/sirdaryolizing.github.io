@@ -137,13 +137,13 @@ $(document).ready(function(){
         if(windowScroll != 0){
             $('header').css({
                 height: '70px',
-                background: 'rgba(0,0,0, 0.8)'});
+                background: 'rgba(0,0,0, 0.9)'});
             $('.head-contacts').hide();
         }else{
            if($('.wrapper').css('width') >= '991px'){
                 $('header').css({
                     height: '120px',
-                    background: 'rgba(0,0,0, 0.8)'});
+                    background: 'rgba(0,0,0, 0.9)'});
                 $('.head-contacts').show();
            }
         }
