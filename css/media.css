@@ -1,0 +1,207 @@
+@media only screen and (min-width : 1224px) and (max-width: 1366px) {
+    .slider .items .slider-title{
+        width: 380px;
+    }
+    .slider .items .slider-title_items{
+        margin: 0;
+    }
+    .slider .items .slider-title_items h1{
+        font-size: 27px;
+    }
+}
+
+@media (max-width : 1223px) {
+    .wrapper{
+        width: 960px;
+    }
+    .slider .items .slider-title{
+        width: 280px;
+    }
+    .slider .items .slider-title_items h1{
+        font-size: 18px;
+    }
+    .slider .items .slider-title_items span, .slider .items .slider-title_items p{
+        font-size: 14px;
+    }
+    .header-logo_slogan span:first-child{
+        font-size: 22px;
+    }
+    .header-nav{
+        width: 500px;
+    }
+    .header-nav ul li a{
+        font-size: 15px;
+    }
+    .about-title{
+        width: 50%;
+    }
+    .about-title p{
+        font-size: 14px;
+    }
+    .advantage-cards_item h4{
+        font-size: 16px;
+    }
+    .service-items{
+        align-items: center;
+    }
+    .service-items_img{
+        max-width: 370px;
+        height: auto;
+    }
+    .service-items_img img{
+        width: 100%;
+    }
+    .section-partners .partners .partners-logo a img{
+        max-width: 128px;
+    }
+    .section-calculator .calculator-result{
+        width: 48%;
+    }
+    .modal-service_block-content{
+        width: 80%;
+    }
+    .modal-service_block-content table{
+        width: 100%;
+    }
+    .modal-service_block-content_docs{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-device-width: 990px) {
+    .wrapper{
+        width: 691px;
+    }
+    header{
+        height: 70px;
+        background: rgba(0,0,0, 0.8);
+    }
+    .header-btn{
+        display: block;
+    }
+    .header-nav{
+        display: none;
+    }
+    .head-contacts{
+        display: none;
+    }
+    .about{
+        flex-direction: column-reverse;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .about-title{
+        width: 100%;
+    }
+    .advantage-cards{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .advantage-cards_item{
+        margin-bottom: 25px;
+    }
+    .service-items{
+        flex-direction: column-reverse;
+    }
+    .service-items_img{
+        order: 1;
+        margin-bottom: 25px;
+    }
+    .section-partners .partners{
+        width: 85%;
+        margin: 0 auto;
+    }
+    .section-calculator .calculator{
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-calculator .calculator-result{
+        width: 70%;
+    }
+    .section-contacts .wrapper .contact-us{
+        min-height: 722px;
+    }
+    footer .footer-wrapper{
+        flex-direction: column;
+    }
+    footer .footer-wrapper .footer-company{
+        width: 90%;
+    }
+    footer .footer-wrapper .map{
+        width: 90%;
+    }
+    .modal-app{
+        width: 520px;
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .wrapper{
+        width: 90%;
+    }
+    .section-about h3, .section-advantage h3, .section-service h3, .section-partners h3, .section-calculator h3, .section-docs h3, .section-contacts h3{
+        font-size: 27px;
+    }
+    .header-logo_img{
+        width: 40px;
+        height: 40px;
+    }
+    .header-logo_slogan span:first-child{
+        font-size: 15px;
+    }
+    .header-logo_slogan span:last-child{
+        font-size: 11px;
+    }
+    .service-items_img{
+        width: 100%;    
+    }
+    .about-img img{
+        width: 270px;
+    }
+    .service-items_description{
+        width: 100%;
+    }
+    .section-calculator .calculator-result{
+        width: 100%;
+    }
+    .section-calculator .calculator-result_items__data span{
+        font-size: 14px;
+    }
+    .section-calculator .calculator-result_items__data input{
+        width: 33%;
+    }
+    .section-docs .docs{
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-contacts .wrapper{
+        flex-direction: column;
+    }
+    .section-contacts .wrapper .contacts-phone_title, .section-contacts .wrapper .contacts-email_title, .section-contacts .wrapper .contacts-adress_title, .section-contacts .wrapper .contacts-requisite_title{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .section-contacts .wrapper .contacts-phone_tel, .section-contacts .wrapper .contacts-phone_mail, .section-contacts .wrapper .contacts-phone_ads, .section-contacts .wrapper .contacts-phone_items, .section-contacts .wrapper .contacts-email_tel, .section-contacts .wrapper .contacts-email_mail, .section-contacts .wrapper .contacts-email_ads, .section-contacts .wrapper .contacts-email_items, .section-contacts .wrapper .contacts-adress_tel, .section-contacts .wrapper .contacts-adress_mail, .section-contacts .wrapper .contacts-adress_ads, .section-contacts .wrapper .contacts-adress_items, .section-contacts .wrapper .contacts-requisite_tel, .section-contacts .wrapper .contacts-requisite_mail, .section-contacts .wrapper .contacts-requisite_ads, .section-contacts .wrapper .contacts-requisite_items{
+        margin-left: 30px;
+    }
+    .section-contacts .wrapper .contact-us{
+        display: none;
+    }
+    .section-contacts .wrapper .contact-us-btn button{
+        display: inline;
+    }
+    .modal-service_block-content{
+        width: 85%;
+    }
+    .modal-service_block-content_docs{
+        flex-direction: column;
+    }
+    .modal-service_block-content_docs a{
+        margin-bottom: 20px;
+    }
+    .modal-service_block-content{
+        overflow-x: scroll;
+    }
+}

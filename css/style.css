@@ -158,11 +158,100 @@ section {
 header {
   width: 100%;
   height: 120px;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
   position: fixed;
   z-index: 9;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+.navbar-lang {
+  margin: 10px;
+}
+
+.navbar-lang a {
+  margin-left: 15px;
+}
+
+.navbar-lang a img {
+  width: 38px;
+}
+
+.navbar ul li {
+  text-align: center;
+}
+
+.navbar ul li a {
+  color: #fff;
+  font-family: 'Raleway Regular';
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 43px;
+  margin-bottom: 20px;
+}
+
+.navbar-contacts {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar-contacts-phone, .navbar-contacts-email {
+  margin: 10px;
+}
+
+.navbar-contacts-phone_title, .navbar-contacts-email_title {
+  margin-right: 30px;
+  color: #fff;
+  font-family: 'Raleway Regular';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.navbar-contacts-phone_tel a,
+.navbar-contacts-phone_mail a, .navbar-contacts-email_tel a,
+.navbar-contacts-email_mail a {
+  color: #fff;
+  font-family: 'Open Sans Regular';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 20px;
 }
 
 .head-contacts {
@@ -344,6 +433,20 @@ header {
   letter-spacing: 1.3px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.header-btn {
+  display: none;
+}
+
+.header-btn_bars, .header-btn_close {
+  font-size: 30px;
+  color: #b4b4b4;
+  cursor: pointer;
+}
+
+.header-btn_close {
+  display: none;
 }
 
 .slider {
@@ -1105,6 +1208,21 @@ header {
   overflow: hidden;
 }
 
+.section-contacts .wrapper .contact-us-btn button {
+  color: #ffffff;
+  font-family: "Open Sans Semibold";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 10px 30px;
+  background: #ff8b38;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: none;
+}
+
 footer {
   width: 100%;
   padding-top: 70px;
@@ -1152,13 +1270,20 @@ footer .footer-wrapper .footer-logo-img {
   margin-bottom: 30px;
 }
 
+footer .footer-wrapper .footer-company {
+  width: 300px;
+}
+
 footer .footer-wrapper .footer-company p {
   line-height: 20px;
   font-family: 'Open Sans Regular';
   font-size: 14px;
   color: #ffffff;
-  width: 300px;
   text-align: justify;
+}
+
+footer .footer-wrapper .map {
+  width: 600px;
 }
 
 .modal {
@@ -1177,41 +1302,6 @@ footer .footer-wrapper .footer-company p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.modal-app {
-  position: relative;
-  display: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 800px;
-  height: 775px;
-  border-radius: 5px;
-  background: #fff;
-}
-
-.modal-app .modal-app_close {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  color: #ff8b38;
-  font-size: 30px;
-  cursor: pointer;
-}
-
-.modal-app .modal-app_close:hover {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  -webkit-transition: 1s;
-  transition: 1s;
 }
 
 .modal-callback {
