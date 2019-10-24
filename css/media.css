@@ -204,4 +204,10 @@
     .modal-service_block-content{
         overflow-x: scroll;
     }
+    .preloader .loader{
+        width: 320px;
+    }
+    .preloader .loader .loader-img img{
+        width: 100%;
+    }
 }
