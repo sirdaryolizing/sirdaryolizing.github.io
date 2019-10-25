@@ -197,6 +197,10 @@ header {
   width: 38px;
 }
 
+.navbar ul {
+  margin-bottom: 30px;
+}
+
 .navbar ul li {
   text-align: center;
 }
@@ -1204,7 +1208,7 @@ header {
 
 .section-contacts .wrapper .contact-us {
   width: 520px;
-  max-height: 660px;
+  max-height: 730px;
   overflow: hidden;
 }
 
