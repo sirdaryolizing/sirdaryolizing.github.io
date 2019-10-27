@@ -149,12 +149,6 @@ section {
   visibility: hidden;
 }
 
-.section-main {
-  width: 100%;
-  height: 100vh;
-  padding: 0;
-}
-
 header {
   width: 100%;
   height: 120px;
@@ -451,6 +445,12 @@ header {
 
 .header-btn_close {
   display: none;
+}
+
+.section-main {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
 }
 
 .slider {
@@ -1061,7 +1061,7 @@ header {
 }
 
 .section-docs .docs .doc {
-  width: 200px;
+  width: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

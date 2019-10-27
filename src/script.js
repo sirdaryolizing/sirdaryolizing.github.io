@@ -180,6 +180,7 @@ $(document).ready(function(){
         $('.modal').fadeOut();
         $('main').css('filter', 'none');
         $('body').css('overflow', '');
+        $('header').show();
         $('.modal-callback, .modal-service').css('display', 'none');
     });
     
@@ -191,6 +192,7 @@ $(document).ready(function(){
                 $('.modal').fadeOut();
                 $('main').css('filter', 'none');
                 $('body').css('overflow', '');
+                $('header').show();
             }
         }
     });
@@ -205,6 +207,7 @@ $(document).ready(function(){
         $('.modal').fadeIn();
         $('main').css('filter', 'blur(5px)');
         $('body').css('overflow', 'hidden');
+        $('header').hide();
     }
 
     // navbar
