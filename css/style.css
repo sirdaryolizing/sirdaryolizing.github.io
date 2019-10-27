@@ -1,12 +1,4 @@
 @font-face {
-  font-family: 'Open Sans Semibold';
-  src: url("../fonts/OpenSans-SemiBold.eot");
-  src: url("../fonts/OpenSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-SemiBold.woff") format("woff"), url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'Open Sans Regular';
   src: url("../fonts/OpenSans-Regular.eot");
   src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.ttf") format("truetype");
@@ -15,49 +7,9 @@
 }
 
 @font-face {
-  font-family: 'Open Sans Semibold Italic';
-  src: url("../fonts/OpenSans-SemiBoldItalic.eot");
-  src: url("../fonts/OpenSans-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-SemiBoldItalic.woff") format("woff"), url("../fonts/OpenSans-SemiBoldItalic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Open Sans Bold';
-  src: url("../fonts/OpenSans-Bold.eot");
-  src: url("../fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Open Sans Italic';
-  src: url("../fonts/OpenSans-Italic.eot");
-  src: url("../fonts/OpenSans-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Italic.woff") format("woff"), url("../fonts/OpenSans-Italic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Raleway Light';
-  src: url("../fonts/Raleway-Light.eot");
-  src: url("../fonts/Raleway-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Light.woff") format("woff"), url("../fonts/Raleway-Light.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'Raleway Regular';
   src: url("../fonts/Raleway-Regular.eot");
   src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Raleway Bold';
-  src: url("../fonts/Raleway-Bold.eot");
-  src: url("../fonts/Raleway-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Bold.woff") format("woff"), url("../fonts/Raleway-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -424,9 +376,9 @@ header {
 .header-nav ul li a {
   opacity: 0.69;
   color: #ffffff;
-  font-family: 'Open Sans Semibold', 'Arial', sans-serif;
+  font-family: 'Open Sans Regular', 'Arial', sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 600;
   text-decoration: none;
   letter-spacing: 1.3px;
   -webkit-transition: 0.3s;
@@ -508,9 +460,9 @@ header {
 
 .slider .items .slider-title_items h1 {
   color: #ffffff;
-  font-family: 'Raleway Bold';
+  font-family: 'Raleway Regular';
   font-size: 36px;
-  font-weight: 400;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -518,9 +470,9 @@ header {
 .slider .items .slider-title_button {
   padding: 10px 30px;
   color: #ffffff;
-  font-family: "Open Sans Semibold";
+  font-family: "Open Sans Regular";
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 600;
   border: 2px solid #ffffff;
   text-decoration: none;
   margin-left: 5px;
@@ -794,6 +746,13 @@ header {
   max-height: 300px;
 }
 
+.service-items_img img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
 .service-items_description {
   width: 500px;
 }
@@ -923,9 +882,9 @@ header {
 
 .section-calculator .calculator-result h4 {
   color: #212121;
-  font-family: 'Raleway Bold';
+  font-family: 'Raleway Regular';
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 43px;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -965,7 +924,8 @@ header {
 
 .section-calculator .calculator-result_items__data span {
   line-height: 20px;
-  font-family: 'Open Sans Semibold';
+  font-family: 'Open Sans Regular';
+  font-weight: 600;
   font-size: 16px;
   color: #212121;
 }
@@ -979,7 +939,8 @@ header {
   padding: 3px 15px;
   margin-bottom: 29px;
   line-height: 20px;
-  font-family: 'Open Sans Semibold';
+  font-family: 'Open Sans Regular';
+  font-weight: 600;
   font-size: 16px;
   color: #212121;
   text-align: right;
@@ -1098,9 +1059,9 @@ header {
 
 .section-docs .docs .doc a {
   color: #212121;
-  font-family: 'Raleway Bold';
+  font-family: 'Raleway Regular';
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 26px;
   text-decoration: none;
   text-align: center;
@@ -1157,9 +1118,9 @@ header {
 
 .section-contacts .wrapper .contacts-phone_title, .section-contacts .wrapper .contacts-email_title, .section-contacts .wrapper .contacts-adress_title, .section-contacts .wrapper .contacts-requisite_title {
   color: #212121;
-  font-family: 'Raleway Bold';
+  font-family: 'Raleway Regular';
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 43px;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -1185,7 +1146,8 @@ header {
 
 .section-contacts .wrapper .contacts-phone_tel span, .section-contacts .wrapper .contacts-phone_mail span, .section-contacts .wrapper .contacts-phone_ads span, .section-contacts .wrapper .contacts-phone_items span, .section-contacts .wrapper .contacts-email_tel span, .section-contacts .wrapper .contacts-email_mail span, .section-contacts .wrapper .contacts-email_ads span, .section-contacts .wrapper .contacts-email_items span, .section-contacts .wrapper .contacts-adress_tel span, .section-contacts .wrapper .contacts-adress_mail span, .section-contacts .wrapper .contacts-adress_ads span, .section-contacts .wrapper .contacts-adress_items span, .section-contacts .wrapper .contacts-requisite_tel span, .section-contacts .wrapper .contacts-requisite_mail span, .section-contacts .wrapper .contacts-requisite_ads span, .section-contacts .wrapper .contacts-requisite_items span {
   line-height: 16px;
-  font-family: 'Open Sans Semibold';
+  font-family: 'Open Sans Regular';
+  font-weight: 600;
   font-size: 16px;
   color: #212121;
   margin-bottom: 5px;
@@ -1417,7 +1379,8 @@ footer .footer-wrapper .map {
 }
 
 .modal-service_block-content table tr th {
-  font-family: 'Open Sans Semibold';
+  font-family: 'Open Sans Regular';
+  font-weight: 600;
   font-size: 18px;
   border: 1px solid rgba(0, 0, 0, 0.4);
 }
